@@ -9,7 +9,7 @@
 #import "PatientListViewController.h"
 #import "NetworkManager.h"
 #import "AppDelegate.h"
-
+#import "PatientLiveViewController.h"
 @interface PatientListViewController ()
 
 @end
@@ -31,7 +31,7 @@
     
 NetworkManager *networkManager = [NetworkManager sharedInstance];
     
-[    networkManager getPatientList:@"1" withResponseType:OLSPATIENTLIST responseHandler:^(NSDictionary *resultDict,NSError *error){
+[    networkManager getPatientList:@"4" withResponseType:OLSPATIENTLIST responseHandler:^(NSDictionary *resultDict,NSError *error){
         
         
         if (resultDict == nil && error == nil) {
@@ -44,10 +44,11 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
             BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
             if (error == nil && success) {
                 // update the records of the user in core data
+                NSMutableArray * dataArra = [resultDict objectForKey:@"posts"];
 
-                PatientListViewController *patientList = [[PatientListViewController alloc]initWithNibName:@"PatientListViewController" bundle:Nil];
-                
-//                [self.navigationController pushViewController:patientList animated:YES];
+                PatientLiveViewController *patientLiveVC = [[PatientLiveViewController alloc]initWithNibName:@"PatientLiveViewController" bundle:Nil];
+
+                [self.navigationController pushViewController:patientLiveVC animated:YES];
                 
             }else{
                 
