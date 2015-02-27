@@ -75,6 +75,8 @@
 		BA13376F1AA12BFE00B14E72 /* icon14.png in Resources */ = {isa = PBXBuildFile; fileRef = BA13375F1AA12BFE00B14E72 /* icon14.png */; };
 		BA1337701AA12BFE00B14E72 /* input-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BA1337601AA12BFE00B14E72 /* input-bg.png */; };
 		BA1337711AA12BFE00B14E72 /* input-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = BA1337611AA12BFE00B14E72 /* input-chat.png */; };
+		BA13377A1AA1331C00B14E72 /* PatientExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337781AA1331C00B14E72 /* PatientExpenseViewController.m */; };
+		BA13377B1AA1331C00B14E72 /* PatientExpenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA1337791AA1331C00B14E72 /* PatientExpenseViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,9 +136,9 @@
 		B4C019B11AA0E3F600768170 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		B4C019B51AA0E70200768170 /* LiveStreamingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveStreamingViewController.h; sourceTree = "<group>"; };
 		B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveStreamingViewController.m; sourceTree = "<group>"; };
-		B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttentdantMainViewController.h; sourceTree = "<group>"; };
-		B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttentdantMainViewController.m; sourceTree = "<group>"; };
-		B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttentdantMainViewController.xib; sourceTree = "<group>"; };
+		B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttentdantMainViewController.h; path = ../AttentdantMainViewController.h; sourceTree = "<group>"; };
+		B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttentdantMainViewController.m; path = ../AttentdantMainViewController.m; sourceTree = "<group>"; };
+		B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttentdantMainViewController.xib; path = ../AttentdantMainViewController.xib; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
 		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -160,31 +162,34 @@
 		BA1337311AA0FD0400B14E72 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		BA1337321AA0FD0400B14E72 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		BA1337331AA0FD0400B14E72 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		BA1337421AA117C400B14E72 /* PatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientListViewController.h; path = OLS/PatientListViewController.h; sourceTree = "<group>"; };
-		BA1337431AA117C400B14E72 /* PatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientListViewController.m; path = OLS/PatientListViewController.m; sourceTree = "<group>"; };
-		BA1337441AA117C400B14E72 /* PatientListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientListViewController.xib; path = OLS/PatientListViewController.xib; sourceTree = "<group>"; };
+		BA1337421AA117C400B14E72 /* PatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientListViewController.h; sourceTree = "<group>"; };
+		BA1337431AA117C400B14E72 /* PatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientListViewController.m; sourceTree = "<group>"; };
+		BA1337441AA117C400B14E72 /* PatientListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientListViewController.xib; sourceTree = "<group>"; };
 		BA1337481AA1217400B14E72 /* PatientLiveCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientLiveCellTableViewCell.h; sourceTree = "<group>"; };
 		BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLiveCellTableViewCell.m; sourceTree = "<group>"; };
 		BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveCellTableViewCell.xib; sourceTree = "<group>"; };
 		BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientLiveViewController.h; sourceTree = "<group>"; };
 		BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLiveViewController.m; sourceTree = "<group>"; };
 		BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveViewController.xib; sourceTree = "<group>"; };
-		BA1337521AA12BFE00B14E72 /* expense-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expense-icon.png"; sourceTree = "<group>"; };
-		BA1337531AA12BFE00B14E72 /* report-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "report-icon.png"; sourceTree = "<group>"; };
-		BA1337541AA12BFE00B14E72 /* video-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-icon.png"; sourceTree = "<group>"; };
-		BA1337551AA12BFE00B14E72 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alarm.png; sourceTree = "<group>"; };
-		BA1337561AA12BFE00B14E72 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		BA1337571AA12BFE00B14E72 /* callout-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout-1.png"; sourceTree = "<group>"; };
-		BA1337581AA12BFE00B14E72 /* callout-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "callout-2.png"; sourceTree = "<group>"; };
-		BA1337591AA12BFE00B14E72 /* cell1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell1.png; sourceTree = "<group>"; };
-		BA13375A1AA12BFE00B14E72 /* cell2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell2.png; sourceTree = "<group>"; };
-		BA13375B1AA12BFE00B14E72 /* chat-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-bg.png"; sourceTree = "<group>"; };
-		BA13375C1AA12BFE00B14E72 /* icon11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon11.png; sourceTree = "<group>"; };
-		BA13375D1AA12BFE00B14E72 /* icon12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon12.png; sourceTree = "<group>"; };
-		BA13375E1AA12BFE00B14E72 /* icon13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon13.png; sourceTree = "<group>"; };
-		BA13375F1AA12BFE00B14E72 /* icon14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon14.png; sourceTree = "<group>"; };
-		BA1337601AA12BFE00B14E72 /* input-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-bg.png"; sourceTree = "<group>"; };
-		BA1337611AA12BFE00B14E72 /* input-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-chat.png"; sourceTree = "<group>"; };
+		BA1337521AA12BFE00B14E72 /* expense-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "expense-icon.png"; path = "../expense-icon.png"; sourceTree = "<group>"; };
+		BA1337531AA12BFE00B14E72 /* report-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "report-icon.png"; path = "../report-icon.png"; sourceTree = "<group>"; };
+		BA1337541AA12BFE00B14E72 /* video-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video-icon.png"; path = "../video-icon.png"; sourceTree = "<group>"; };
+		BA1337551AA12BFE00B14E72 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alarm.png; path = ../alarm.png; sourceTree = "<group>"; };
+		BA1337561AA12BFE00B14E72 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../arrow.png; sourceTree = "<group>"; };
+		BA1337571AA12BFE00B14E72 /* callout-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "callout-1.png"; path = "../callout-1.png"; sourceTree = "<group>"; };
+		BA1337581AA12BFE00B14E72 /* callout-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "callout-2.png"; path = "../callout-2.png"; sourceTree = "<group>"; };
+		BA1337591AA12BFE00B14E72 /* cell1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell1.png; path = ../cell1.png; sourceTree = "<group>"; };
+		BA13375A1AA12BFE00B14E72 /* cell2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cell2.png; path = ../cell2.png; sourceTree = "<group>"; };
+		BA13375B1AA12BFE00B14E72 /* chat-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-bg.png"; path = "../chat-bg.png"; sourceTree = "<group>"; };
+		BA13375C1AA12BFE00B14E72 /* icon11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon11.png; path = ../icon11.png; sourceTree = "<group>"; };
+		BA13375D1AA12BFE00B14E72 /* icon12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon12.png; path = ../icon12.png; sourceTree = "<group>"; };
+		BA13375E1AA12BFE00B14E72 /* icon13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon13.png; path = ../icon13.png; sourceTree = "<group>"; };
+		BA13375F1AA12BFE00B14E72 /* icon14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon14.png; path = ../icon14.png; sourceTree = "<group>"; };
+		BA1337601AA12BFE00B14E72 /* input-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "input-bg.png"; path = "../input-bg.png"; sourceTree = "<group>"; };
+		BA1337611AA12BFE00B14E72 /* input-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "input-chat.png"; path = "../input-chat.png"; sourceTree = "<group>"; };
+		BA1337771AA1331C00B14E72 /* PatientExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientExpenseViewController.h; path = ../PatientExpenseViewController.h; sourceTree = "<group>"; };
+		BA1337781AA1331C00B14E72 /* PatientExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientExpenseViewController.m; path = ../PatientExpenseViewController.m; sourceTree = "<group>"; };
+		BA1337791AA1331C00B14E72 /* PatientExpenseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientExpenseViewController.xib; path = ../PatientExpenseViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,28 +213,6 @@
 		297FC2221A9F520300305402 = {
 			isa = PBXGroup;
 			children = (
-				B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */,
-				B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */,
-				B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */,
-				BA1337521AA12BFE00B14E72 /* expense-icon.png */,
-				BA1337531AA12BFE00B14E72 /* report-icon.png */,
-				BA1337541AA12BFE00B14E72 /* video-icon.png */,
-				BA1337551AA12BFE00B14E72 /* alarm.png */,
-				BA1337561AA12BFE00B14E72 /* arrow.png */,
-				BA1337571AA12BFE00B14E72 /* callout-1.png */,
-				BA1337581AA12BFE00B14E72 /* callout-2.png */,
-				BA1337591AA12BFE00B14E72 /* cell1.png */,
-				BA13375A1AA12BFE00B14E72 /* cell2.png */,
-				BA13375B1AA12BFE00B14E72 /* chat-bg.png */,
-				BA13375C1AA12BFE00B14E72 /* icon11.png */,
-				BA13375D1AA12BFE00B14E72 /* icon12.png */,
-				BA13375E1AA12BFE00B14E72 /* icon13.png */,
-				BA13375F1AA12BFE00B14E72 /* icon14.png */,
-				BA1337601AA12BFE00B14E72 /* input-bg.png */,
-				BA1337611AA12BFE00B14E72 /* input-chat.png */,
-				BA1337421AA117C400B14E72 /* PatientListViewController.h */,
-				BA1337431AA117C400B14E72 /* PatientListViewController.m */,
-				BA1337441AA117C400B14E72 /* PatientListViewController.xib */,
 				297FC22D1A9F520300305402 /* OLS */,
 				297FC2471A9F520300305402 /* OLSTests */,
 				297FC22C1A9F520300305402 /* Products */,
@@ -248,12 +231,8 @@
 		297FC22D1A9F520300305402 /* OLS */ = {
 			isa = PBXGroup;
 			children = (
-				BA1337481AA1217400B14E72 /* PatientLiveCellTableViewCell.h */,
-				BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */,
-				BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */,
-				BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */,
-				BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */,
-				BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */,
+				BA13377D1AA1336800B14E72 /* Doctor */,
+				BA13377C1AA1332400B14E72 /* Patient */,
 				BA1337471AA1204700B14E72 /* Images */,
 				BA1337201AA0FD0400B14E72 /* AFNetworking */,
 				BA13371C1AA0EC6B00B14E72 /* DataModal */,
@@ -275,16 +254,10 @@
 				297FC2361A9F520300305402 /* ViewController.m */,
 				297FC2381A9F520300305402 /* Main.storyboard */,
 				297FC23D1A9F520300305402 /* LaunchScreen.xib */,
-				906E87D51AA0FF3F0073A203 /* VideoStreamViewController.h */,
-				906E87D61AA0FF3F0073A203 /* VideoStreamViewController.m */,
-				906E87D71AA0FF3F0073A203 /* VideoStreamViewController.xib */,
 				906E87B41AA0DBD10073A203 /* Images.xcassets */,
 				297FC22E1A9F520300305402 /* Supporting Files */,
 				BA13371D1AA0F5B800B14E72 /* NetworkManager.h */,
 				BA13371E1AA0F5B800B14E72 /* NetworkManager.m */,
-				901D7BB91AA1171700CD21D9 /* AttendantViewController.h */,
-				901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */,
-				901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */,
 			);
 			path = OLS;
 			sourceTree = "<group>";
@@ -385,8 +358,59 @@
 		BA1337471AA1204700B14E72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BA1337521AA12BFE00B14E72 /* expense-icon.png */,
+				BA1337531AA12BFE00B14E72 /* report-icon.png */,
+				BA1337541AA12BFE00B14E72 /* video-icon.png */,
+				BA1337551AA12BFE00B14E72 /* alarm.png */,
+				BA1337561AA12BFE00B14E72 /* arrow.png */,
+				BA1337571AA12BFE00B14E72 /* callout-1.png */,
+				BA1337581AA12BFE00B14E72 /* callout-2.png */,
+				BA1337591AA12BFE00B14E72 /* cell1.png */,
+				BA13375A1AA12BFE00B14E72 /* cell2.png */,
+				BA13375B1AA12BFE00B14E72 /* chat-bg.png */,
+				BA13375C1AA12BFE00B14E72 /* icon11.png */,
+				BA13375D1AA12BFE00B14E72 /* icon12.png */,
+				BA13375E1AA12BFE00B14E72 /* icon13.png */,
+				BA13375F1AA12BFE00B14E72 /* icon14.png */,
+				BA1337601AA12BFE00B14E72 /* input-bg.png */,
+				BA1337611AA12BFE00B14E72 /* input-chat.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		BA13377C1AA1332400B14E72 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				901D7BB91AA1171700CD21D9 /* AttendantViewController.h */,
+				901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */,
+				901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */,
+				BA1337421AA117C400B14E72 /* PatientListViewController.h */,
+				BA1337431AA117C400B14E72 /* PatientListViewController.m */,
+				BA1337441AA117C400B14E72 /* PatientListViewController.xib */,
+				BA1337771AA1331C00B14E72 /* PatientExpenseViewController.h */,
+				BA1337781AA1331C00B14E72 /* PatientExpenseViewController.m */,
+				BA1337791AA1331C00B14E72 /* PatientExpenseViewController.xib */,
+				B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */,
+				B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */,
+				B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */,
+				BA1337481AA1217400B14E72 /* PatientLiveCellTableViewCell.h */,
+				BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */,
+				BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */,
+				BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */,
+				BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */,
+				BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */,
+			);
+			name = Patient;
+			sourceTree = "<group>";
+		};
+		BA13377D1AA1336800B14E72 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				906E87D51AA0FF3F0073A203 /* VideoStreamViewController.h */,
+				906E87D61AA0FF3F0073A203 /* VideoStreamViewController.m */,
+				906E87D71AA0FF3F0073A203 /* VideoStreamViewController.xib */,
+			);
+			name = Doctor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,6 +529,7 @@
 				BA13374F1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
 				297FC23F1A9F520300305402 /* LaunchScreen.xib in Resources */,
+				BA13377B1AA1331C00B14E72 /* PatientExpenseViewController.xib in Resources */,
 				BA1337631AA12BFE00B14E72 /* report-icon.png in Resources */,
 				B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */,
 				BA1337711AA12BFE00B14E72 /* input-chat.png in Resources */,
@@ -541,6 +566,7 @@
 				297FC25A1A9F532C00305402 /* HelperClass.m in Sources */,
 				297FC2341A9F520300305402 /* AppDelegate.m in Sources */,
 				297FC2561A9F522400305402 /* Reachability.m in Sources */,
+				BA13377A1AA1331C00B14E72 /* PatientExpenseViewController.m in Sources */,
 				BA13373C1AA0FD0400B14E72 /* UIImageView+AFNetworking.m in Sources */,
 				BA13373A1AA0FD0400B14E72 /* AFURLConnectionOperation.m in Sources */,
 				BA1337451AA117C400B14E72 /* PatientListViewController.m in Sources */,
