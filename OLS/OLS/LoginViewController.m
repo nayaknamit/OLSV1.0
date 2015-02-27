@@ -10,8 +10,8 @@
 #import "HelperClass.h"
 #import "ChatViewController.h"
 #import "NetworkManager.h"
-#import "DocDashBoardViewController.h"
 #import "AppDelegate.h"
+#import "PatientListViewController.h"
 
 @interface LoginViewController (){
     NSInteger count;
@@ -118,10 +118,11 @@
                 // update the records of the user in core data
                 
                 AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
-//                appDelegate.userID = 
-                DocDashBoardViewController *docDash = [[DocDashBoardViewController alloc]initWithNibName:@"DocDashBoardViewController" bundle:Nil];
+//                appDelegate.userID =
+                PatientListViewController *patientList = [[PatientListViewController alloc]initWithNibName:@"PatientListViewController" bundle:Nil];
+//                DocDashBoardViewController *docDash = [[DocDashBoardViewController alloc]initWithNibName:@"DocDashBoardViewController" bundle:Nil];
                 
-                [self.navigationController pushViewController:docDash animated:YES];
+                [self.navigationController pushViewController:patientList animated:YES];
               
             }else{
                 

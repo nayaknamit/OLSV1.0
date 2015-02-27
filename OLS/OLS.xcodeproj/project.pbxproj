@@ -51,8 +51,8 @@
 		BA13373A1AA0FD0400B14E72 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13372F1AA0FD0400B14E72 /* AFURLConnectionOperation.m */; };
 		BA13373B1AA0FD0400B14E72 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337311AA0FD0400B14E72 /* AFXMLRequestOperation.m */; };
 		BA13373C1AA0FD0400B14E72 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337331AA0FD0400B14E72 /* UIImageView+AFNetworking.m */; };
-		BA1337401AA109DB00B14E72 /* DocDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13373E1AA109DB00B14E72 /* DocDashBoardViewController.m */; };
-		BA1337411AA109DB00B14E72 /* DocDashBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA13373F1AA109DB00B14E72 /* DocDashBoardViewController.xib */; };
+		BA1337451AA117C400B14E72 /* PatientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337431AA117C400B14E72 /* PatientListViewController.m */; };
+		BA1337461AA117C400B14E72 /* PatientListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA1337441AA117C400B14E72 /* PatientListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,9 +135,9 @@
 		BA1337311AA0FD0400B14E72 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		BA1337321AA0FD0400B14E72 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		BA1337331AA0FD0400B14E72 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		BA13373D1AA109DB00B14E72 /* DocDashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocDashBoardViewController.h; sourceTree = "<group>"; };
-		BA13373E1AA109DB00B14E72 /* DocDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocDashBoardViewController.m; sourceTree = "<group>"; };
-		BA13373F1AA109DB00B14E72 /* DocDashBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocDashBoardViewController.xib; sourceTree = "<group>"; };
+		BA1337421AA117C400B14E72 /* PatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientListViewController.h; path = OLS/PatientListViewController.h; sourceTree = "<group>"; };
+		BA1337431AA117C400B14E72 /* PatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientListViewController.m; path = OLS/PatientListViewController.m; sourceTree = "<group>"; };
+		BA1337441AA117C400B14E72 /* PatientListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientListViewController.xib; path = OLS/PatientListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +161,9 @@
 		297FC2221A9F520300305402 = {
 			isa = PBXGroup;
 			children = (
+				BA1337421AA117C400B14E72 /* PatientListViewController.h */,
+				BA1337431AA117C400B14E72 /* PatientListViewController.m */,
+				BA1337441AA117C400B14E72 /* PatientListViewController.xib */,
 				297FC22D1A9F520300305402 /* OLS */,
 				297FC2471A9F520300305402 /* OLSTests */,
 				297FC22C1A9F520300305402 /* Products */,
@@ -406,6 +409,7 @@
 				901D7BBF1AA1191D00CD21D9 /* attender1.png in Resources */,
 				906E87C61AA0EE120073A203 /* loginbg.png in Resources */,
 				906E87AC1AA0D31A0073A203 /* splashscreen2.png in Resources */,
+				BA1337461AA117C400B14E72 /* PatientListViewController.xib in Resources */,
 				906E87B71AA0DFA00073A203 /* splash7.png in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
 				297FC23F1A9F520300305402 /* LaunchScreen.xib in Resources */,
@@ -441,6 +445,7 @@
 				297FC2561A9F522400305402 /* Reachability.m in Sources */,
 				BA13373C1AA0FD0400B14E72 /* UIImageView+AFNetworking.m in Sources */,
 				BA13373A1AA0FD0400B14E72 /* AFURLConnectionOperation.m in Sources */,
+				BA1337451AA117C400B14E72 /* PatientListViewController.m in Sources */,
 				BA13373B1AA0FD0400B14E72 /* AFXMLRequestOperation.m in Sources */,
 				BA1337361AA0FD0400B14E72 /* AFImageRequestOperation.m in Sources */,
 				901D7BBC1AA1171700CD21D9 /* AttendantViewController.m in Sources */,
@@ -449,7 +454,6 @@
 				297FC2311A9F520300305402 /* main.m in Sources */,
 				BA1337341AA0FD0400B14E72 /* AFHTTPClient.m in Sources */,
 				B4C019B21AA0E3F600768170 /* ChatViewController.m in Sources */,
-				BA1337401AA109DB00B14E72 /* DocDashBoardViewController.m in Sources */,
 				BA1337381AA0FD0400B14E72 /* AFNetworkActivityIndicatorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
