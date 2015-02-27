@@ -45,7 +45,7 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
             if (error == nil && success) {
                 // update the records of the user in core data
                 NSMutableArray * dataArra = [resultDict objectForKey:@"posts"];
-
+//NSDictionary *dataArra = 
                 PatientLiveViewController *patientLiveVC = [[PatientLiveViewController alloc]initWithNibName:@"PatientLiveViewController" bundle:Nil];
 
                 [self.navigationController pushViewController:patientLiveVC animated:YES];
