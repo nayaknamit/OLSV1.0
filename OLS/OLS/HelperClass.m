@@ -10,6 +10,7 @@
 #import "Reachability.h"
 #import "AFNetworking.h"
 
+
 @implementation HelperClass
 
 -(BOOL)isNetworkAvailable{
