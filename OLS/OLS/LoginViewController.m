@@ -10,6 +10,9 @@
 #import "HelperClass.h"
 #import "ChatViewController.h"
 #import "NetworkManager.h"
+#import "DocDashBoardViewController.h"
+#import "AppDelegate.h"
+
 @interface LoginViewController (){
     NSInteger count;
     
@@ -113,25 +116,35 @@
             BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
             if (error == nil && success) {
                 // update the records of the user in core data
-              
+                
+                AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
+//                appDelegate.userID = 
+                DocDashBoardViewController *docDash = [[DocDashBoardViewController alloc]initWithNibName:@"DocDashBoardViewController" bundle:Nil];
+                
+                [self.navigationController pushViewController:docDash animated:YES];
               
             }else{
                 
                 NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
-//                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
                 
             }
             
         }else{
             if(error !=nil){
                 NSString *errorMessage = error.localizedDescription;
-//                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
             }
         }
     }];
 }
 
-
+- (void)showAlert:(NSString*)titleText body:(NSString *)bodyText {
+    
+    UIAlertView *ErrorAlertView = [[UIAlertView alloc]initWithTitle:titleText message:bodyText delegate:nil cancelButtonTitle:NSLocalizedString(@"ALERT_VIEW_OK","nil") otherButtonTitles:Nil, nil];
+    [ErrorAlertView show];
+    
+}
 /*
 #pragma mark - Navigation
 

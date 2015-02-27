@@ -40,7 +40,7 @@ static NetworkManager *sharedInstance = nil;
     
 //    http://localhost:8888/health/web-service.php?user=ashish&method=Login&password=password
     NSString *webServicePathRaw = @"http://localhost:8888/health/web-service.php?method=Login";
-    NSString *webServicePath = [NSString stringWithFormat:@"%@&username=%@&passwod=%@",webServicePathRaw,userName,pass];
+    NSString *webServicePath = [NSString stringWithFormat:@"%@&user=%@&password=%@",webServicePathRaw,userName,pass];
 
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
                                 userName, @"user",
