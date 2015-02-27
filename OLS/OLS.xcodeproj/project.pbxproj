@@ -15,6 +15,8 @@
 		297FC24B1A9F520300305402 /* OLSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FC24A1A9F520300305402 /* OLSTests.m */; };
 		297FC2561A9F522400305402 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FC2551A9F522400305402 /* Reachability.m */; };
 		297FC25A1A9F532C00305402 /* HelperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 297FC2591A9F532C00305402 /* HelperClass.m */; };
+		901D7BBC1AA1171700CD21D9 /* AttendantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */; };
+		901D7BBD1AA1171700CD21D9 /* AttendantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */; };
 		906E87AB1AA0D31A0073A203 /* splashscreen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87A51AA0D31A0073A203 /* splashscreen1.png */; };
 		906E87AC1AA0D31A0073A203 /* splashscreen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87A61AA0D31A0073A203 /* splashscreen2.png */; };
 		906E87AD1AA0D31A0073A203 /* splashscreen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87A71AA0D31A0073A203 /* splashscreen3.png */; };
@@ -77,6 +79,9 @@
 		297FC2551A9F522400305402 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		297FC2581A9F532C00305402 /* HelperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperClass.h; sourceTree = "<group>"; };
 		297FC2591A9F532C00305402 /* HelperClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperClass.m; sourceTree = "<group>"; };
+		901D7BB91AA1171700CD21D9 /* AttendantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendantViewController.h; sourceTree = "<group>"; };
+		901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendantViewController.m; sourceTree = "<group>"; };
+		901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttendantViewController.xib; sourceTree = "<group>"; };
 		906E87A51AA0D31A0073A203 /* splashscreen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen1.png; sourceTree = "<group>"; };
 		906E87A61AA0D31A0073A203 /* splashscreen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen2.png; sourceTree = "<group>"; };
 		906E87A71AA0D31A0073A203 /* splashscreen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen3.png; sourceTree = "<group>"; };
@@ -198,6 +203,9 @@
 				BA13373D1AA109DB00B14E72 /* DocDashBoardViewController.h */,
 				BA13373E1AA109DB00B14E72 /* DocDashBoardViewController.m */,
 				BA13373F1AA109DB00B14E72 /* DocDashBoardViewController.xib */,
+				901D7BB91AA1171700CD21D9 /* AttendantViewController.h */,
+				901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */,
+				901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */,
 			);
 			path = OLS;
 			sourceTree = "<group>";
@@ -374,6 +382,7 @@
 			files = (
 				906E87CC1AA0EE8D0073A203 /* LogInViewController.xib in Resources */,
 				BA1337411AA109DB00B14E72 /* DocDashBoardViewController.xib in Resources */,
+				901D7BBD1AA1171700CD21D9 /* AttendantViewController.xib in Resources */,
 				906E87B51AA0DBD10073A203 /* Images.xcassets in Resources */,
 				906E87AD1AA0D31A0073A203 /* splashscreen3.png in Resources */,
 				906E87C71AA0EE120073A203 /* loginbg1.png in Resources */,
@@ -422,6 +431,7 @@
 				BA13373A1AA0FD0400B14E72 /* AFURLConnectionOperation.m in Sources */,
 				BA13373B1AA0FD0400B14E72 /* AFXMLRequestOperation.m in Sources */,
 				BA1337361AA0FD0400B14E72 /* AFImageRequestOperation.m in Sources */,
+				901D7BBC1AA1171700CD21D9 /* AttendantViewController.m in Sources */,
 				BA1337391AA0FD0400B14E72 /* AFPropertyListRequestOperation.m in Sources */,
 				BA1337371AA0FD0400B14E72 /* AFJSONRequestOperation.m in Sources */,
 				297FC2311A9F520300305402 /* main.m in Sources */,
