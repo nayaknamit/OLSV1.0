@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+@property (strong,nonatomic)NSTimer *timer;
+@property (strong,nonatomic) UIImageView *splashView;
 @end
 
