@@ -1,2 +1,12 @@
 
 OLS/.DS_Store
+
+*.xccheckout
+
+*.xcuserstate
+
+*.xcscheme
+
+*.plist
+
+OLS/.DS_Store
