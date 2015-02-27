@@ -18,5 +18,5 @@ typedef void (^OLSGetuserAPIRequestHandler)(NSDictionary *resultDict, NSError *e
 
 // Get the shared instance and create it if necessary.
 + (NetworkManager *) sharedInstance;
-
+-(void)getUserInformation:(NSString*)userName withPass:(NSString*)pass withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetuserAPIRequestHandler)responseHandler;
 @end

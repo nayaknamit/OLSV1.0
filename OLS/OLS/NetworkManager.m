@@ -38,11 +38,12 @@ static NetworkManager *sharedInstance = nil;
 
 -(void)getUserInformation:(NSString*)userName withPass:(NSString*)pass withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetuserAPIRequestHandler)responseHandler{
     
-    
-    NSString *webServicePath = @"http://localhost:8888/";
+//    http://localhost:8888/health/web-service.php?user=ashish&method=Login&password=password
+    NSString *webServicePathRaw = @"http://localhost:8888/health/web-service.php?method=Login";
+    NSString *webServicePath = [NSString stringWithFormat:@"%@&user=%@&password=%@",webServicePathRaw,userName,pass];
 
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
-                                userName, @"userName",
+                                userName, @"user",
                                 pass, @"password",
                                 nil];
     
