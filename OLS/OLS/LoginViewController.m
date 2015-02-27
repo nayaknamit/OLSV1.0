@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "HelperClass.h"
 #import "ChatViewController.h"
+#import "NetworkManager.h"
 @interface LoginViewController (){
     NSInteger count;
     
@@ -97,6 +98,37 @@
 
 -(void) loginTapped{
     
+        NetworkManager *networkManager = [NetworkManager sharedInstance];
+    
+    [networkManager getUserInformation:self.usernameField.text withPass:self.passwordField.text withResponseType:OLSUSERINFORMATION responseHandler:^(NSDictionary *resultDict,NSError *error){
+
+        
+        if (resultDict == nil && error == nil) {
+//            [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:NSLocalizedString(@"INVALID_USERNAME_PASSWORD",nil)];
+        }
+        
+        
+        if(resultDict !=nil)
+        {
+            BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
+            if (error == nil && success) {
+                // update the records of the user in core data
+              
+              
+            }else{
+                
+                NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
+//                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                
+            }
+            
+        }else{
+            if(error !=nil){
+                NSString *errorMessage = error.localizedDescription;
+//                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+            }
+        }
+    }];
 }
 
 
