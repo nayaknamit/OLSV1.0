@@ -13,9 +13,18 @@
 @end
 
 @implementation VideoStreamViewController
+- (IBAction)buttonTapped:(id)sender {
+    CGRect frame=self.view.frame;
+    UIWebView *videoView=[[UIWebView alloc]initWithFrame:frame];
+    [videoView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.242.241.126:8080/1/stream.html"]]];
+//    float zoom=videoView.bounds.size.width/videoView.scrollView.contentSize.width;
+    videoView.scalesPageToFit=YES;
+    [self.view addSubview:videoView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
 

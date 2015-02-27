@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
-@interface VideoStreamViewController : ViewController
+@interface VideoStreamViewController : ViewController<UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
