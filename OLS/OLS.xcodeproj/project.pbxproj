@@ -40,6 +40,11 @@
 		906E87B01AA0D31A0073A203 /* splashscreen6.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87AA1AA0D31A0073A203 /* splashscreen6.png */; };
 		906E87B51AA0DBD10073A203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906E87B41AA0DBD10073A203 /* Images.xcassets */; };
 		906E87B71AA0DFA00073A203 /* splash7.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87B61AA0DFA00073A203 /* splash7.png */; };
+		906E87C31AA0EE120073A203 /* INPUT-FIELD.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87BE1AA0EE120073A203 /* INPUT-FIELD.png */; };
+		906E87C41AA0EE120073A203 /* inputfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87BF1AA0EE120073A203 /* inputfield.png */; };
+		906E87C51AA0EE120073A203 /* LOGIN-BTN.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87C01AA0EE120073A203 /* LOGIN-BTN.png */; };
+		906E87C61AA0EE120073A203 /* loginbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87C11AA0EE120073A203 /* loginbg.png */; };
+		906E87C71AA0EE120073A203 /* loginbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87C21AA0EE120073A203 /* loginbg1.png */; };
 		B4C019B21AA0E3F600768170 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B01AA0E3F600768170 /* ChatViewController.m */; };
 		B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C019B11AA0E3F600768170 /* ChatViewController.xib */; };
 		B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */; };
@@ -117,6 +122,11 @@
 		906E87AA1AA0D31A0073A203 /* splashscreen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen6.png; sourceTree = "<group>"; };
 		906E87B41AA0DBD10073A203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		906E87B61AA0DFA00073A203 /* splash7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash7.png; sourceTree = "<group>"; };
+		906E87BE1AA0EE120073A203 /* INPUT-FIELD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "INPUT-FIELD.png"; sourceTree = "<group>"; };
+		906E87BF1AA0EE120073A203 /* inputfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inputfield.png; sourceTree = "<group>"; };
+		906E87C01AA0EE120073A203 /* LOGIN-BTN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGIN-BTN.png"; sourceTree = "<group>"; };
+		906E87C11AA0EE120073A203 /* loginbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg.png; sourceTree = "<group>"; };
+		906E87C21AA0EE120073A203 /* loginbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg1.png; sourceTree = "<group>"; };
 		B4C019AF1AA0E3F600768170 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B4C019B01AA0E3F600768170 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B4C019B11AA0E3F600768170 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
@@ -268,6 +278,11 @@
 		906E87B11AA0D32F0073A203 /* splashImages */ = {
 			isa = PBXGroup;
 			children = (
+				906E87BE1AA0EE120073A203 /* INPUT-FIELD.png */,
+				906E87BF1AA0EE120073A203 /* inputfield.png */,
+				906E87C01AA0EE120073A203 /* LOGIN-BTN.png */,
+				906E87C11AA0EE120073A203 /* loginbg.png */,
+				906E87C21AA0EE120073A203 /* loginbg1.png */,
 				906E87B61AA0DFA00073A203 /* splash7.png */,
 				906E87A51AA0D31A0073A203 /* splashscreen1.png */,
 				906E87A61AA0D31A0073A203 /* splashscreen2.png */,
@@ -379,14 +394,19 @@
 			files = (
 				906E87B51AA0DBD10073A203 /* Images.xcassets in Resources */,
 				906E87AD1AA0D31A0073A203 /* splashscreen3.png in Resources */,
+				906E87C71AA0EE120073A203 /* loginbg1.png in Resources */,
 				906E87AB1AA0D31A0073A203 /* splashscreen1.png in Resources */,
+				906E87C31AA0EE120073A203 /* INPUT-FIELD.png in Resources */,
 				297FC23A1A9F520300305402 /* Main.storyboard in Resources */,
 				906E87B01AA0D31A0073A203 /* splashscreen6.png in Resources */,
+				906E87C51AA0EE120073A203 /* LOGIN-BTN.png in Resources */,
+				906E87C61AA0EE120073A203 /* loginbg.png in Resources */,
 				906E87AC1AA0D31A0073A203 /* splashscreen2.png in Resources */,
 				906E87B71AA0DFA00073A203 /* splash7.png in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
 				297FC23F1A9F520300305402 /* LaunchScreen.xib in Resources */,
 				B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */,
+				906E87C41AA0EE120073A203 /* inputfield.png in Resources */,
 				906E87AE1AA0D31A0073A203 /* splashscreen4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
