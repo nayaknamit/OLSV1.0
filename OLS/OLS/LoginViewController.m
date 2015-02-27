@@ -1,29 +1,32 @@
 //
-//  ViewController.m
+//  LoginViewController.m
 //  OLS
 //
-//  Created by Kartik Mittal on 2/26/15.
+//  Created by Hackathon on 2/28/15.
 //  Copyright (c) 2015 Sapient. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
 #import "HelperClass.h"
 #import "ChatViewController.h"
-@interface ViewController (){
+@interface LoginViewController (){
     NSInteger count;
     
-        NSInputStream *inputStream;
-        NSOutputStream *outputStream;
+    NSInputStream *inputStream;
+    NSOutputStream *outputStream;
     
 }
 
+
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    UITapGestureRecognizer *singleFingerTap =[[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                     action:@selector(loginTapped)];
+    [self.loginButtonView addGestureRecognizer:singleFingerTap];
     [self.navigationController setNavigationBarHidden:YES];
     // Do any additional setup after loading the view, typically from a nib.
     count=0;
@@ -90,5 +93,20 @@
     [self presentViewController:clientView animated:YES completion:nil];
 }
 
+
+-(void) loginTapped{
+    
+}
+
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

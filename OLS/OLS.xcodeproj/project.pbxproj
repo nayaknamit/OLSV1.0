@@ -46,6 +46,7 @@
 		906E87C61AA0EE120073A203 /* loginbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87C11AA0EE120073A203 /* loginbg.png */; };
 		906E87C71AA0EE120073A203 /* loginbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87C21AA0EE120073A203 /* loginbg1.png */; };
 		906E87CC1AA0EE8D0073A203 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */; };
+		906E87CF1AA0F3940073A203 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E87CE1AA0F3940073A203 /* LoginViewController.m */; };
 		B4C019B21AA0E3F600768170 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B01AA0E3F600768170 /* ChatViewController.m */; };
 		B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C019B11AA0E3F600768170 /* ChatViewController.xib */; };
 		B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */; };
@@ -129,6 +130,8 @@
 		906E87C11AA0EE120073A203 /* loginbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg.png; sourceTree = "<group>"; };
 		906E87C21AA0EE120073A203 /* loginbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg1.png; sourceTree = "<group>"; };
 		906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		906E87CD1AA0F3940073A203 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		906E87CE1AA0F3940073A203 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B4C019AF1AA0E3F600768170 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B4C019B01AA0E3F600768170 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B4C019B11AA0E3F600768170 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				297FC25B1A9F55FD00305402 /* AFNetworking */,
 				297FC26F1A9F55FD00305402 /* UIKit+AFNetworking */,
 				906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */,
+				906E87CD1AA0F3940073A203 /* LoginViewController.h */,
+				906E87CE1AA0F3940073A203 /* LoginViewController.m */,
 				297FC2581A9F532C00305402 /* HelperClass.h */,
 				297FC2591A9F532C00305402 /* HelperClass.m */,
 				297FC2541A9F522400305402 /* Reachability.h */,
@@ -431,6 +436,7 @@
 			files = (
 				BA13371B1AA0EC6000B14E72 /* user.m in Sources */,
 				297FC2861A9F55FD00305402 /* AFURLConnectionOperation.m in Sources */,
+				906E87CF1AA0F3940073A203 /* LoginViewController.m in Sources */,
 				297FC2811A9F55FD00305402 /* AFHTTPRequestOperation.m in Sources */,
 				297FC28D1A9F55FD00305402 /* UIButton+AFNetworking.m in Sources */,
 				297FC2841A9F55FD00305402 /* AFNetworkReachabilityManager.m in Sources */,
