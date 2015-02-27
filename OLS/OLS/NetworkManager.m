@@ -87,4 +87,10 @@ static NetworkManager *sharedInstance = nil;
     return jsonResponseDict;
 }
 
+-(void)getPatientList:(NSString*)userID withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetPatientAPIRequestHandler)responseHandler{
+
+
+}
+
+
 @end

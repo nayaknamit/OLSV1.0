@@ -53,6 +53,10 @@
 		BA13373C1AA0FD0400B14E72 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337331AA0FD0400B14E72 /* UIImageView+AFNetworking.m */; };
 		BA1337451AA117C400B14E72 /* PatientListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337431AA117C400B14E72 /* PatientListViewController.m */; };
 		BA1337461AA117C400B14E72 /* PatientListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA1337441AA117C400B14E72 /* PatientListViewController.xib */; };
+		BA13374E1AA1217400B14E72 /* PatientLiveCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */; };
+		BA13374F1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */; };
+		BA1337501AA1217400B14E72 /* PatientLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */; };
+		BA1337511AA1217400B14E72 /* PatientLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,12 @@
 		BA1337421AA117C400B14E72 /* PatientListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientListViewController.h; path = OLS/PatientListViewController.h; sourceTree = "<group>"; };
 		BA1337431AA117C400B14E72 /* PatientListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientListViewController.m; path = OLS/PatientListViewController.m; sourceTree = "<group>"; };
 		BA1337441AA117C400B14E72 /* PatientListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientListViewController.xib; path = OLS/PatientListViewController.xib; sourceTree = "<group>"; };
+		BA1337481AA1217400B14E72 /* PatientLiveCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientLiveCellTableViewCell.h; sourceTree = "<group>"; };
+		BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLiveCellTableViewCell.m; sourceTree = "<group>"; };
+		BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveCellTableViewCell.xib; sourceTree = "<group>"; };
+		BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientLiveViewController.h; sourceTree = "<group>"; };
+		BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLiveViewController.m; sourceTree = "<group>"; };
+		BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +192,13 @@
 		297FC22D1A9F520300305402 /* OLS */ = {
 			isa = PBXGroup;
 			children = (
+				BA1337481AA1217400B14E72 /* PatientLiveCellTableViewCell.h */,
+				BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */,
+				BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */,
+				BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */,
+				BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */,
+				BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */,
+				BA1337471AA1204700B14E72 /* Images */,
 				BA1337201AA0FD0400B14E72 /* AFNetworking */,
 				BA13371C1AA0EC6B00B14E72 /* DataModal */,
 				B4C019B41AA0E6CE00768170 /* LiveStreamining */,
@@ -209,9 +226,6 @@
 				297FC22E1A9F520300305402 /* Supporting Files */,
 				BA13371D1AA0F5B800B14E72 /* NetworkManager.h */,
 				BA13371E1AA0F5B800B14E72 /* NetworkManager.m */,
-				BA13373D1AA109DB00B14E72 /* DocDashBoardViewController.h */,
-				BA13373E1AA109DB00B14E72 /* DocDashBoardViewController.m */,
-				BA13373F1AA109DB00B14E72 /* DocDashBoardViewController.xib */,
 				901D7BB91AA1171700CD21D9 /* AttendantViewController.h */,
 				901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */,
 				901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */,
@@ -312,6 +326,13 @@
 			path = Classes/AFNetworking;
 			sourceTree = "<group>";
 		};
+		BA1337471AA1204700B14E72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,7 +414,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				906E87CC1AA0EE8D0073A203 /* LogInViewController.xib in Resources */,
-				BA1337411AA109DB00B14E72 /* DocDashBoardViewController.xib in Resources */,
 				901D7BBD1AA1171700CD21D9 /* AttendantViewController.xib in Resources */,
 				906E87B51AA0DBD10073A203 /* Images.xcassets in Resources */,
 				906E87AD1AA0D31A0073A203 /* splashscreen3.png in Resources */,
@@ -411,10 +431,12 @@
 				906E87AC1AA0D31A0073A203 /* splashscreen2.png in Resources */,
 				BA1337461AA117C400B14E72 /* PatientListViewController.xib in Resources */,
 				906E87B71AA0DFA00073A203 /* splash7.png in Resources */,
+				BA13374F1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
 				297FC23F1A9F520300305402 /* LaunchScreen.xib in Resources */,
 				B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */,
 				906E87C41AA0EE120073A203 /* inputfield.png in Resources */,
+				BA1337511AA1217400B14E72 /* PatientLiveViewController.xib in Resources */,
 				906E87AE1AA0D31A0073A203 /* splashscreen4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +456,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA1337351AA0FD0400B14E72 /* AFHTTPRequestOperation.m in Sources */,
+				BA13374E1AA1217400B14E72 /* PatientLiveCellTableViewCell.m in Sources */,
+				BA1337501AA1217400B14E72 /* PatientLiveViewController.m in Sources */,
 				BA13371B1AA0EC6000B14E72 /* user.m in Sources */,
 				906E87CF1AA0F3940073A203 /* LoginViewController.m in Sources */,
 				BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */,

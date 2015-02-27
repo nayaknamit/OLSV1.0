@@ -7,6 +7,8 @@
 //
 
 #import "PatientListViewController.h"
+#import "NetworkManager.h"
+#import "AppDelegate.h"
 
 @interface PatientListViewController ()
 
@@ -22,6 +24,53 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+
+    
+NetworkManager *networkManager = [NetworkManager sharedInstance];
+    
+[    networkManager getPatientList:@"1" withResponseType:OLSPATIENTLIST responseHandler:^(NSDictionary *resultDict,NSError *error){
+        
+        
+        if (resultDict == nil && error == nil) {
+            //            [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:NSLocalizedString(@"INVALID_USERNAME_PASSWORD",nil)];
+        }
+        
+        
+        if(resultDict !=nil)
+        {
+            BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
+            if (error == nil && success) {
+                // update the records of the user in core data
+
+                PatientListViewController *patientList = [[PatientListViewController alloc]initWithNibName:@"PatientListViewController" bundle:Nil];
+                
+//                [self.navigationController pushViewController:patientList animated:YES];
+                
+            }else{
+                
+                NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
+                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                
+            }
+            
+        }else{
+            if(error !=nil){
+                NSString *errorMessage = error.localizedDescription;
+                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+            }
+        }
+    }];
+    
+}
+
+- (void)showAlert:(NSString*)titleText body:(NSString *)bodyText {
+    
+    UIAlertView *ErrorAlertView = [[UIAlertView alloc]initWithTitle:titleText message:bodyText delegate:nil cancelButtonTitle:NSLocalizedString(@"ALERT_VIEW_OK","nil") otherButtonTitles:Nil, nil];
+    [ErrorAlertView show];
+    
 }
 
 /*

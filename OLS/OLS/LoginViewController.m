@@ -118,9 +118,9 @@
                 // update the records of the user in core data
                 
                 AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
-//                appDelegate.userID =
+//                appDelegate.userID = 
                 PatientListViewController *patientList = [[PatientListViewController alloc]initWithNibName:@"PatientListViewController" bundle:Nil];
-//                DocDashBoardViewController *docDash = [[DocDashBoardViewController alloc]initWithNibName:@"DocDashBoardViewController" bundle:Nil];
+
                 
                 [self.navigationController pushViewController:patientList animated:YES];
               
