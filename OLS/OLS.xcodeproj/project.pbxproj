@@ -128,7 +128,7 @@
 		906E87C01AA0EE120073A203 /* LOGIN-BTN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGIN-BTN.png"; sourceTree = "<group>"; };
 		906E87C11AA0EE120073A203 /* loginbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg.png; sourceTree = "<group>"; };
 		906E87C21AA0EE120073A203 /* loginbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbg1.png; sourceTree = "<group>"; };
-		906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogInViewController.xib; path = ../LogInViewController.xib; sourceTree = "<group>"; };
+		906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		B4C019AF1AA0E3F600768170 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B4C019B01AA0E3F600768170 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B4C019B11AA0E3F600768170 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +182,7 @@
 				906E87B11AA0D32F0073A203 /* splashImages */,
 				297FC25B1A9F55FD00305402 /* AFNetworking */,
 				297FC26F1A9F55FD00305402 /* UIKit+AFNetworking */,
+				906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */,
 				297FC2581A9F532C00305402 /* HelperClass.h */,
 				297FC2591A9F532C00305402 /* HelperClass.m */,
 				297FC2541A9F522400305402 /* Reachability.h */,
@@ -256,7 +257,6 @@
 		297FC26F1A9F55FD00305402 /* UIKit+AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				906E87CA1AA0EE8D0073A203 /* LogInViewController.xib */,
 				297FC2701A9F55FD00305402 /* AFNetworkActivityIndicatorManager.h */,
 				297FC2711A9F55FD00305402 /* AFNetworkActivityIndicatorManager.m */,
 				297FC2721A9F55FD00305402 /* UIActivityIndicatorView+AFNetworking.h */,

@@ -32,7 +32,14 @@
     self.timer=[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(changeSplashImage) userInfo:nil repeats:YES];
     [self.view addSubview:self.splashView];
     [self.view bringSubviewToFront:self.splashView];
+    UITapGestureRecognizer *singleFingerTap =[[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(loginTapped)];
+    [self.loginButtonView addGestureRecognizer:singleFingerTap];
     
+    
+}
+
+-(void) loginTapped{
     
 }
 
