@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSStreamDelegate>
 @property (strong,nonatomic)NSTimer *timer;
 @property (strong,nonatomic) UIImageView *splashView;
 @end

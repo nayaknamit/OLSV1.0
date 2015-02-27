@@ -8,8 +8,13 @@
 
 #import "ViewController.h"
 #import "HelperClass.h"
+#import "ChatViewController.h"
 @interface ViewController (){
     NSInteger count;
+    
+        NSInputStream *inputStream;
+        NSOutputStream *outputStream;
+    
 }
 
 @end
@@ -51,5 +56,34 @@
         }
     }
 }
+
+//Chat server
+
+- (void)initNetworkCommunication {
+    
+    CFReadStreamRef readStream;
+    CFWriteStreamRef writeStream;
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"192.168.56.91", 3600, &readStream, &writeStream);
+    inputStream = (__bridge NSInputStream *)readStream;
+    outputStream = (__bridge NSOutputStream *)writeStream;
+    //    [inputStream setDelegate:self];
+    //    [outputStream setDelegate:self];
+    [inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [inputStream open];
+    [outputStream open];
+    
+}
+
+- (IBAction)joinNetwork:(id)sender {
+    NSString *response  = @"ss";//[NSString stringWithFormat:@"iam:%@", self.nameField.text];
+    NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
+    [outputStream write:[data bytes] maxLength:[data length]];
+    ChatViewController * clientView=[[ChatViewController alloc]init];
+    clientView.inputStream=inputStream;
+    clientView.outputStream=outputStream;
+    [self presentViewController:clientView animated:YES completion:nil];
+}
+
 
 @end
