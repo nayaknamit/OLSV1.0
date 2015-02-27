@@ -27,6 +27,7 @@
     UITapGestureRecognizer *singleFingerTap =[[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                      action:@selector(loginTapped)];
     [self.loginButtonView addGestureRecognizer:singleFingerTap];
+    
     [self.navigationController setNavigationBarHidden:YES];
     // Do any additional setup after loading the view, typically from a nib.
     count=0;
