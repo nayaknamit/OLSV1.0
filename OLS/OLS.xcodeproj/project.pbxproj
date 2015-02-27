@@ -40,6 +40,8 @@
 		B4C019B21AA0E3F600768170 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B01AA0E3F600768170 /* ChatViewController.m */; };
 		B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C019B11AA0E3F600768170 /* ChatViewController.xib */; };
 		B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */; };
+		B4C01A1E1AA1328800768170 /* AttentdantMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */; };
+		B4C01A1F1AA1328800768170 /* AttentdantMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */; };
 		BA13371B1AA0EC6000B14E72 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371A1AA0EC6000B14E72 /* user.m */; };
 		BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371E1AA0F5B800B14E72 /* NetworkManager.m */; };
 		BA1337341AA0FD0400B14E72 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337221AA0FD0400B14E72 /* AFHTTPClient.m */; };
@@ -132,6 +134,9 @@
 		B4C019B11AA0E3F600768170 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		B4C019B51AA0E70200768170 /* LiveStreamingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveStreamingViewController.h; sourceTree = "<group>"; };
 		B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveStreamingViewController.m; sourceTree = "<group>"; };
+		B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttentdantMainViewController.h; sourceTree = "<group>"; };
+		B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttentdantMainViewController.m; sourceTree = "<group>"; };
+		B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttentdantMainViewController.xib; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
 		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -203,6 +208,9 @@
 		297FC2221A9F520300305402 = {
 			isa = PBXGroup;
 			children = (
+				B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */,
+				B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */,
+				B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */,
 				BA1337521AA12BFE00B14E72 /* expense-icon.png */,
 				BA1337531AA12BFE00B14E72 /* report-icon.png */,
 				BA1337541AA12BFE00B14E72 /* video-icon.png */,
@@ -469,6 +477,7 @@
 				906E87AD1AA0D31A0073A203 /* splashscreen3.png in Resources */,
 				BA13376F1AA12BFE00B14E72 /* icon14.png in Resources */,
 				906E87C71AA0EE120073A203 /* loginbg1.png in Resources */,
+				B4C01A1F1AA1328800768170 /* AttentdantMainViewController.xib in Resources */,
 				901D7BC31AA1192D00CD21D9 /* header1.png in Resources */,
 				BA1337671AA12BFE00B14E72 /* callout-1.png in Resources */,
 				901D7BC21AA1192D00CD21D9 /* header.png in Resources */,
@@ -528,6 +537,7 @@
 				906E87D81AA0FF3F0073A203 /* VideoStreamViewController.m in Sources */,
 				297FC2371A9F520300305402 /* ViewController.m in Sources */,
 				B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */,
+				B4C01A1E1AA1328800768170 /* AttentdantMainViewController.m in Sources */,
 				297FC25A1A9F532C00305402 /* HelperClass.m in Sources */,
 				297FC2341A9F520300305402 /* AppDelegate.m in Sources */,
 				297FC2561A9F522400305402 /* Reachability.m in Sources */,
