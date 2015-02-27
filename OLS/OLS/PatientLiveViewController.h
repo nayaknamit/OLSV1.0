@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PatientLiveViewController : UIViewController <NSStreamDelegate>
-
+@property (nonatomic,strong)NSMutableArray *patientArr;
 @end

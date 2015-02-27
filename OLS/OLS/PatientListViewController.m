@@ -11,13 +11,16 @@
 #import "AppDelegate.h"
 #import "PatientLiveViewController.h"
 @interface PatientListViewController ()
-
+{
+    NSMutableArray *nameDictArra;
+}
 @end
 
 @implementation PatientListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    nameDictArra = [NSMutableArray array];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -45,11 +48,21 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
             if (error == nil && success) {
                 // update the records of the user in core data
                 NSMutableArray * dataArra = [resultDict objectForKey:@"posts"];
-//NSDictionary *dataArra = 
+                [nameDictArra removeAllObjects];
+                for (int i=0; i<dataArra.count; i++) {
+                    NSMutableDictionary *dict = [[dataArra objectAtIndex:i] objectForKey:@"patientList"];
+                    
+                    NSMutableDictionary *data = [NSMutableDictionary dictionaryWithObjectsAndKeys:[dict
+ objectForKey:@"id"],@"ID",[NSString stringWithFormat:@"%@ %@",[dict objectForKey:@"name"],[dict objectForKey:@"surname"]],@"name", nil];
+                    [nameDictArra addObject:data];
+               
+                }
+                [_patientTableView reloadData];
+                /*
                 PatientLiveViewController *patientLiveVC = [[PatientLiveViewController alloc]initWithNibName:@"PatientLiveViewController" bundle:Nil];
-
+                patientLiveVC.patientArr = nameDictArra;
                 [self.navigationController pushViewController:patientLiveVC animated:YES];
-                
+                */
             }else{
                 
                 NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
@@ -85,7 +98,7 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
 */
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return [nameDictArra count];
     
 }
 
@@ -96,11 +109,15 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
     static NSString *CellIdentifier = @"patientListCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
     if(cell == nil){
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text  =@"Ramesh";
+    NSDictionary *dict = [nameDictArra objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text  = [dict objectForKey:@"name"];
     return cell;
 }
 
