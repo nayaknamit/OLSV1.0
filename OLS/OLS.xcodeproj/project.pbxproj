@@ -51,6 +51,7 @@
 		B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C019B11AA0E3F600768170 /* ChatViewController.xib */; };
 		B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */; };
 		BA13371B1AA0EC6000B14E72 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371A1AA0EC6000B14E72 /* user.m */; };
+		BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371E1AA0F5B800B14E72 /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 		B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveStreamingViewController.m; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
+		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		BA13371E1AA0F5B800B14E72 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 				297FC23D1A9F520300305402 /* LaunchScreen.xib */,
 				906E87B41AA0DBD10073A203 /* Images.xcassets */,
 				297FC22E1A9F520300305402 /* Supporting Files */,
+				BA13371D1AA0F5B800B14E72 /* NetworkManager.h */,
+				BA13371E1AA0F5B800B14E72 /* NetworkManager.m */,
 			);
 			path = OLS;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 				297FC28D1A9F55FD00305402 /* UIButton+AFNetworking.m in Sources */,
 				297FC2841A9F55FD00305402 /* AFNetworkReachabilityManager.m in Sources */,
 				297FC28F1A9F55FD00305402 /* UIProgressView+AFNetworking.m in Sources */,
+				BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */,
 				297FC2891A9F55FD00305402 /* AFURLSessionManager.m in Sources */,
 				297FC2871A9F55FD00305402 /* AFURLRequestSerialization.m in Sources */,
 				297FC2371A9F520300305402 /* ViewController.m in Sources */,
