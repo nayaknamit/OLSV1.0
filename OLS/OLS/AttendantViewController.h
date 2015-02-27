@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
-@interface AttendantViewController : ViewController
-
+@interface AttendantViewController : ViewController<UITableViewDataSource,UITableViewDelegate>
+- (IBAction)backButtonTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *streamButton;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong,nonatomic)NSMutableArray *items;
 @end

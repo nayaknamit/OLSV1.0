@@ -7,6 +7,8 @@
 //
 
 #import "AttendantViewController.h"
+#import "VideoStreamViewController.h"
+#import "ChatViewController.h"
 
 @interface AttendantViewController ()
 
@@ -16,7 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.items=[[NSMutableArray alloc]initWithObjects:@"Report",@"Chat", @"Patient History",@"Expenses", nil];
+    UITapGestureRecognizer *singleFingerTap =[[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                     action:@selector(openStream)];
+    [self.streamButton addGestureRecognizer:singleFingerTap];
+    self.tableView=[[UITableView alloc]init];
+    self.tableView.delegate=self;
+    self.tableView.dataSource=self;
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)openStream{
+    VideoStreamViewController *videoStream=[[VideoStreamViewController alloc]init];
+    [self presentViewController:videoStream animated:YES completion:nil];
+}
+
+- (IBAction)backButtonTapped:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +42,51 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.items.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;    //count of section
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = nil;
+    cell = [self.tableView dequeueReusableCellWithIdentifier:@"itemCell"];
+    
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"eventCell"];
+    }
+    
+    cell.textLabel.text=[self.items objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    switch (indexPath.row) {
+        case 0:
+            
+            break;
+        case 1:{
+            ChatViewController * chat=[[ChatViewController alloc]init];
+            [self presentViewController:chat animated:YES completion:nil];
+            break;
+        }
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
 /*
 #pragma mark - Navigation
 
@@ -33,5 +96,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

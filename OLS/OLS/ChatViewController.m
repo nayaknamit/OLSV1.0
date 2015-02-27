@@ -7,9 +7,14 @@
 //
 
 #import "ChatViewController.h"
+#import "ChatTableViewCell.h"
 
 @interface ChatViewController (){
     NSMutableArray * messages;
+    NSInputStream *inputStream;
+    NSOutputStream *outputStream;
+    
+
 }
 @property (strong, nonatomic) IBOutlet UITextField *inputMessageField;
 @property (strong, nonatomic) IBOutlet UITableView *tView;
@@ -17,15 +22,43 @@
 @end
 
 @implementation ChatViewController
+- (void)initNetworkCommunication {
+    
+    CFReadStreamRef readStream;
+    CFWriteStreamRef writeStream;
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"localhost", 80, &readStream, &writeStream);
+    inputStream = (__bridge NSInputStream *)readStream;
+    outputStream = (__bridge NSOutputStream *)writeStream;
+    //    [inputStream setDelegate:self];
+    //    [outputStream setDelegate:self];
+    [inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [inputStream open];
+    [outputStream open];
+    
+}
 
+- (void)joinNetwork{
+    NSString *response  = [NSString stringWithFormat:@"iam: kartik"];
+    NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
+    [outputStream write:[data bytes] maxLength:[data length]];
+//    ChatViewController * clientView=[[ChatViewController alloc]init];
+//    clientView.inputStream=inputStream;
+//    clientView.outputStream=outputStream;
+//    [self.navigationController pushViewController:clientView animated:YES];
+    
+    //    [self presentViewController:clientView animated:YES completion:nil];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initNetworkCommunication];
     messages = [[NSMutableArray alloc] init];
-    [self.inputStream setDelegate:self];
-    [self.outputStream setDelegate:self];
+    [inputStream setDelegate:self];
+    [outputStream setDelegate:self];
     
     self.tView.delegate=self;
     self.tView.dataSource=self;
+    [self joinNetwork];
     
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -59,7 +92,7 @@
 - (IBAction)sendMessage:(id)sender {
     NSString *response  = [NSString stringWithFormat:@"msg:%@", self.inputMessageField.text];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
-    [self.outputStream write:[data bytes] maxLength:[data length]];
+    [outputStream write:[data bytes] maxLength:[data length]];
     
 }
 
@@ -69,12 +102,24 @@
     
     static NSString *CellIdentifier = @"ChatCellIdentifier";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
+        cell = [[ChatTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
     }
     NSString *s = (NSString *) [messages objectAtIndex:indexPath.row];
-    cell.textLabel.text = s;
+    NSArray* text=[s componentsSeparatedByString:@":"];
+    NSString *sss=(NSString*)[text objectAtIndex:0];
+    if ([sss isEqualToString:@" kartik"]) {
+        cell.textLabel.text = s;
+        cell.textLabel.textAlignment=UITextAlignmentRight;
+        cell.bcImage.image=[UIImage imageNamed:@"callout-2"];
+    }
+    else{
+        cell.textLabel.text = s;
+        cell.textLabel.textAlignment=UITextAlignmentLeft;
+        cell.bcImage.image=[UIImage imageNamed:@"callout-1"];
+    }
+    
     return cell;
 }
 
@@ -96,13 +141,13 @@
             break;
             
         case NSStreamEventHasBytesAvailable:
-            if (theStream == self.inputStream) {
+            if (theStream == inputStream) {
                 
                 uint8_t buffer[1024];
                 NSInteger len;
                 
-                while ([self.inputStream hasBytesAvailable]) {
-                    len = [self.inputStream read:buffer maxLength:sizeof(buffer)];
+                while ([inputStream hasBytesAvailable]) {
+                    len = [inputStream read:buffer maxLength:sizeof(buffer)];
                     if (len > 0) {
                         
                         NSString *output = [[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding];

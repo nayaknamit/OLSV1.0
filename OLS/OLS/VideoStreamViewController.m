@@ -16,10 +16,17 @@
 - (IBAction)buttonTapped:(id)sender {
     CGRect frame=self.view.frame;
     UIWebView *videoView=[[UIWebView alloc]initWithFrame:frame];
-    [videoView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.242.241.126:8080/1/stream.html"]]];
+    videoView.delegate=self;
+    NSURLRequest* request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.242.241.126:8080/1/stream.html"]];
+    [videoView loadRequest:request];
 //    float zoom=videoView.bounds.size.width/videoView.scrollView.contentSize.width;
     videoView.scalesPageToFit=YES;
     [self.view addSubview:videoView];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"Error : %@",error);
 }
 
 - (void)viewDidLoad {
