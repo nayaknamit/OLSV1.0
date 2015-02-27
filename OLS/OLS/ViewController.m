@@ -41,7 +41,7 @@
 
 -(void)changeSplashImage{
     count=count+1;
-    if (count==20) {
+    if (count==40) {
         [self.timer invalidate];
         [self.splashView removeFromSuperview];
     }
