@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum{
+    OLSUSERINFORMATION=0,
+
+}REQUEST_TYPE;
+
+typedef void (^OLSGetuserAPIRequestHandler)(NSDictionary *resultDict, NSError *error);
 @interface NetworkManager : NSObject
+
+// Get the shared instance and create it if necessary.
++ (NetworkManager *) sharedInstance;
 
 @end

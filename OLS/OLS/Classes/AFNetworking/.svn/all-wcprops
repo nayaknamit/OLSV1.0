@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/scm/learn2go_ios_android_apps/!svn/ver/817/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking
+END
+AFHTTPClient.m
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/learn2go_ios_android_apps/!svn/ver/817/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFHTTPClient.m
+END
+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFNetworking.h
+END
+AFXMLRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFXMLRequestOperation.h
+END
+AFNetworkActivityIndicatorManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFNetworkActivityIndicatorManager.h
+END
+UIImageView+AFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/UIImageView+AFNetworking.h
+END
+AFXMLRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFXMLRequestOperation.m
+END
+AFURLConnectionOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFURLConnectionOperation.h
+END
+AFNetworkActivityIndicatorManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFNetworkActivityIndicatorManager.m
+END
+AFJSONRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFJSONRequestOperation.h
+END
+UIImageView+AFNetworking.m
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/UIImageView+AFNetworking.m
+END
+AFURLConnectionOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFURLConnectionOperation.m
+END
+AFJSONRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFJSONRequestOperation.m
+END
+AFHTTPRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFHTTPRequestOperation.h
+END
+AFPropertyListRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFPropertyListRequestOperation.h
+END
+AFImageRequestOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFImageRequestOperation.h
+END
+AFHTTPRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFHTTPRequestOperation.m
+END
+AFHTTPClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFHTTPClient.h
+END
+AFPropertyListRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFPropertyListRequestOperation.m
+END
+AFImageRequestOperation.m
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/scm/learn2go_ios_android_apps/!svn/ver/814/trunk/Development/Code/Learn2Go_iPhone/Learn2Go/Learn2Go/Classes/AFNetworking/AFImageRequestOperation.m
+END
