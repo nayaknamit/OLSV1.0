@@ -39,6 +39,7 @@
 		906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87A91AA0D31A0073A203 /* splashscreen5.png */; };
 		906E87B01AA0D31A0073A203 /* splashscreen6.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87AA1AA0D31A0073A203 /* splashscreen6.png */; };
 		906E87B51AA0DBD10073A203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906E87B41AA0DBD10073A203 /* Images.xcassets */; };
+		906E87B71AA0DFA00073A203 /* splash7.png in Resources */ = {isa = PBXBuildFile; fileRef = 906E87B61AA0DFA00073A203 /* splash7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		906E87A91AA0D31A0073A203 /* splashscreen5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen5.png; sourceTree = "<group>"; };
 		906E87AA1AA0D31A0073A203 /* splashscreen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen6.png; sourceTree = "<group>"; };
 		906E87B41AA0DBD10073A203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		906E87B61AA0DFA00073A203 /* splash7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash7.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 		906E87B11AA0D32F0073A203 /* splashImages */ = {
 			isa = PBXGroup;
 			children = (
+				906E87B61AA0DFA00073A203 /* splash7.png */,
 				906E87A51AA0D31A0073A203 /* splashscreen1.png */,
 				906E87A61AA0D31A0073A203 /* splashscreen2.png */,
 				906E87A71AA0D31A0073A203 /* splashscreen3.png */,
@@ -346,6 +349,7 @@
 				297FC23A1A9F520300305402 /* Main.storyboard in Resources */,
 				906E87B01AA0D31A0073A203 /* splashscreen6.png in Resources */,
 				906E87AC1AA0D31A0073A203 /* splashscreen2.png in Resources */,
+				906E87B71AA0DFA00073A203 /* splash7.png in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
 				297FC23F1A9F520300305402 /* LaunchScreen.xib in Resources */,
 				906E87AE1AA0D31A0073A203 /* splashscreen4.png in Resources */,
@@ -508,8 +512,6 @@
 		297FC24F1A9F520300305402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = OLS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -521,8 +523,6 @@
 		297FC2501A9F520300305402 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = OLS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
