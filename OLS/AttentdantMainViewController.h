@@ -10,4 +10,9 @@
 
 @interface AttentdantMainViewController : UIViewController
 
+@property (nonatomic,strong) IBOutlet UILabel *lblName;
+@property (nonatomic,strong) IBOutlet UILabel *lblICUNo;
+@property (nonatomic,strong) IBOutlet UILabel *lblUID;
+@property (nonatomic,strong) IBOutlet UILabel *lblDocName;@property (nonatomic,strong) IBOutlet UILabel *lblDoctorMob;
+
 @end
