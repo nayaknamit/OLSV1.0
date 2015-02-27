@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HelperClass.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    LoginViewController *loginController=[[LoginViewController alloc]initWithNibName:@"LogInViewController" bundle:[NSBundle mainBundle]]; //or the homeController
+    UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController:loginController];
+    self.window.rootViewController=navController;
     //this calls the handler method whener our application is woken up by local notifications
     UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if (localNotification)
