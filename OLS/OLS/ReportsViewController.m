@@ -7,7 +7,7 @@
 //
 
 #import "ReportsViewController.h"
-
+#import "NetworkManager.h"
 @interface ReportsViewController ()
 
 @end
@@ -23,7 +23,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    [[NetworkManager sharedInstance] ]
+}
 /*
 #pragma mark - Navigation
 
