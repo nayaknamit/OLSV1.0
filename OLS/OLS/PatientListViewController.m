@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeBottom;
     nameDictArra = [NSMutableArray array];
     // Do any additional setup after loading the view from its nib.
 }

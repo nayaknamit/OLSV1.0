@@ -27,7 +27,9 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeBottom;
     UITapGestureRecognizer *singleFingerTap =[[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                      action:@selector(loginTapped)];
     [self.loginButtonView addGestureRecognizer:singleFingerTap];
@@ -167,5 +169,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+    return YES;
+}
 
 @end
