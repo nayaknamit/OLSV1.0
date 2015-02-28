@@ -138,8 +138,6 @@ static NetworkManager *sharedInstance = nil;
     //http://172.20.10.3/health/web-service.php?method=patientList&userID=4
     NSString *webServicePathRaw = @"http://172.20.10.3/health/web-service.php?method=patientDetails";
 
-   
-    NSString *webServicePathRaw = @"http://172.20.10.3/health/web-service.php?method=patientDetails";
     NSString *webServicePath = [NSString stringWithFormat:@"%@&userID=%@",webServicePathRaw,userID];
     
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
