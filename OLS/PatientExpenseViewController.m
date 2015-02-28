@@ -14,10 +14,13 @@
 @end
 
 @implementation PatientExpenseViewController
-
+NSMutableArray *nameDictArra;
+NSMutableArray *expectedDictExpArra;
+NSInteger totalAmount;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +29,19 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    
+    nameDictArra = [NSMutableArray array];
+    expectedDictExpArra = [NSMutableArray array];
 
+    NSMutableDictionary *data1 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"200",@"amount",@"BloodTest",@"expenseName", nil];
+    NSMutableDictionary *data2 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"250",@"amount",@"ECG",@"expenseName", nil];
+    NSMutableDictionary *data3 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"2000",@"amount",@"CT scan",@"expenseName", nil];
+    
+        [expectedDictExpArra addObject:data1];
+        [expectedDictExpArra addObject:data2];
+        [expectedDictExpArra addObject:data3];
+    
+    totalAmount = 0;
     NetworkManager *networkManger = [NetworkManager sharedInstance];
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     
@@ -43,8 +58,21 @@
             BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
             if (error == nil && success) {
                 // update the records of the user in core data
-                
-
+                NSMutableArray * dataArra = [resultDict objectForKey:@"posts"];
+                [nameDictArra removeAllObjects];
+                totalAmount = 0;
+                for (int i=0; i<dataArra.count; i++) {
+                    
+                    NSMutableDictionary *dict = [[dataArra objectAtIndex:i] objectForKey:@"expenseReport"];
+                    NSMutableDictionary *data = [NSMutableDictionary dictionaryWithObjectsAndKeys:[dict
+                                                                                                   objectForKey:@"amount"],@"amount",[dict
+                                                                                                                                      objectForKey:@"expenseName"],@"expenseName", nil];
+                    NSString *amount = [dict objectForKey:@"amount"];
+                    totalAmount += [amount intValue];
+                    [nameDictArra addObject:data];
+                }
+                 [self.ExpenseTable reloadData];
+                self.totalExpLbl.text = [NSString stringWithFormat:@"%ld",(long)totalAmount];
             }else{
                 
                 NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
@@ -73,7 +101,13 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;//[nameDictArra count];
+    
+    if(self.ExpenseSegment.selectedSegmentIndex==0){
+        return [nameDictArra count];
+    }else{
+        return [expectedDictExpArra count];
+    }
+    
     
 }
 
@@ -88,11 +122,21 @@
     cell.contentView.backgroundColor = [UIColor clearColor];
     if(cell == nil){
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
-//    NSDictionary *dict = [nameDictArra objectAtIndex:indexPath.row];
+
+    NSDictionary *dict = [nameDictArra objectAtIndex:indexPath.row];
+
+    if(self.ExpenseSegment.selectedSegmentIndex==0){
+        dict = [nameDictArra objectAtIndex:indexPath.row];
+    }else{
+        dict = [expectedDictExpArra objectAtIndex:indexPath.row];
+    }
     
-//    cell.textLabel.text  = [dict objectForKey:@"name"];
+    
+    cell.textLabel.text  = [dict objectForKey:@"expenseName"];
+    cell.detailTextLabel.text  = [dict objectForKey:@"amount"];
+    
     return cell;
 }
 
@@ -103,4 +147,18 @@
     
 }
 
+-(IBAction)segmentedIndexChange:(id)sender{
+    
+    NSInteger selectedIndex =     self.ExpenseSegment.selectedSegmentIndex;
+    
+    if(selectedIndex==0){
+    
+    
+    }else{
+    
+        
+    }
+    [self.ExpenseTable reloadData];
+
+}
 @end

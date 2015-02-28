@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="ExpenseSegment" destination="yKV-8G-rsw" id="dto-eN-PAt"/>
                 <outlet property="ExpenseTable" destination="ygQ-c7-X3e" id="6FM-Rl-5zB"/>
+                <outlet property="totalExpLbl" destination="Cqm-s4-EQz" id="lKO-c7-qBb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ygQ-c7-X3e">
-                    <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                    <rect key="frame" x="0.0" y="72" width="375" height="521"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="YGe-Nu-R2T"/>
@@ -25,12 +26,27 @@
                     </connections>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yKV-8G-rsw">
-                    <rect key="frame" x="56" y="8" width="280" height="29"/>
+                    <rect key="frame" x="56" y="30" width="280" height="29"/>
                     <segments>
                         <segment title="Current Expenditure"/>
                         <segment title="Expected Expenditure"/>
                     </segments>
+                    <connections>
+                        <action selector="segmentedIndexChange:" destination="-1" eventType="valueChanged" id="N2b-6v-Wps"/>
+                    </connections>
                 </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Expense:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsz-y2-9PC">
+                    <rect key="frame" x="18" y="615" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqm-s4-EQz">
+                    <rect key="frame" x="196" y="615" width="140" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

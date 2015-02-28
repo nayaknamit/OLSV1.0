@@ -12,5 +12,6 @@
 
 @property(nonatomic,strong) IBOutlet UITableView *ExpenseTable;
 @property(nonatomic,strong) IBOutlet UISegmentedControl *ExpenseSegment;
+@property(nonatomic,strong) IBOutlet UILabel *totalExpLbl;
 
 @end
