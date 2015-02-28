@@ -19,6 +19,7 @@
 
 @implementation SuggestPrescriptionViewController
 - (IBAction)submitAction:(id)sender {
+
 }
 
 - (IBAction)date:(id)sender {

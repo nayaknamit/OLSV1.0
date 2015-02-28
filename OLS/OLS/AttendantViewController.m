@@ -83,7 +83,7 @@
             
             break;
         case 1:{
-            ChatViewController * chat=[[ChatViewController alloc]init];
+            ChatViewController * chat=[[ChatViewController alloc]initWithNibName:@"ChatViewController" bundle:nil ];
             [self.navigationController addChildViewController:chat];
             break;
         }
