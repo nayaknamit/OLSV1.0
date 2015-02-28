@@ -73,7 +73,7 @@
     return false;
 }
 - (IBAction)backButtonTapped:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
