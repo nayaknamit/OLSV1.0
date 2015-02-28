@@ -123,7 +123,7 @@
                 
                 NSDictionary *dict = [[[resultDict objectForKey:@"posts"] objectAtIndex:0] objectForKey:@"users"];
                 appDelegate.userID = [dict objectForKey:@"id"];
-                appDelegate.userName = [dict objectForKey:@"username"];
+                appDelegate.patientName = [dict objectForKey:@"username"];
                 if([[dict objectForKey:@"accountType"] integerValue] == 3){
                     AttentdantMainViewController *patientList = [[AttentdantMainViewController alloc]initWithNibName:@"AttentdantMainViewController" bundle:Nil];
                     

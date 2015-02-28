@@ -40,7 +40,7 @@
 
 - (void)joinNetwork{
     AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
-    NSString *response  = [NSString stringWithFormat:@"iam: %@",appDelegate.userName];
+    NSString *response  = [NSString stringWithFormat:@"iam: %@",appDelegate.patientName];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
     [outputStream write:[data bytes] maxLength:[data length]];
 //    ChatViewController * clientView=[[ChatViewController alloc]init];
