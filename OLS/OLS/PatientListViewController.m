@@ -128,9 +128,11 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    PatientLiveViewController* patientView=[[PatientLiveViewController alloc]init];
+   
+    
+    PatientLiveViewController* patientView=[[PatientLiveViewController alloc]initWithNibName:@"PatientLiveViewController" bundle:nil];
     patientView.dataDictionary=[nameDictArra objectAtIndex:indexPath.row];
-    [self.navigationController presentViewController:patientView animated:YES completion:nil];
+    [self.navigationController pushViewController:patientView animated:YES];
 }
 
 @end
