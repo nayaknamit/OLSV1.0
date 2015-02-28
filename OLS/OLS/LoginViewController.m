@@ -98,8 +98,7 @@
     [self presentViewController:clientView animated:YES completion:nil];
 }
 
-
--(void) loginTapped{
+-(IBAction)loginTapped:(id)sender{
     
         NetworkManager *networkManager = [NetworkManager sharedInstance];
     
