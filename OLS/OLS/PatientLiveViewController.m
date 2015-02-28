@@ -8,6 +8,7 @@
 
 #import "PatientLiveViewController.h"
 #import "ChatViewController.h"
+#import "ReportsViewController.h"
 #import "PatientLiveCellTableViewCell.h"
 @interface PatientLiveViewController (){
     
@@ -91,14 +92,17 @@
 {
     NSMutableDictionary *dict = [_dataArra objectAtIndex:indexPath.row];
     if ([[dict objectForKey:@"label"] isEqualToString:@"Chat"]) {
-        ChatViewController* chatView=[[ChatViewController alloc]init];
-        [self.navigationController presentViewController:chatView animated:YES completion:nil];
+        ChatViewController* chatView=[[ChatViewController alloc]initWithNibName:@"ChatViewController" bundle:nil];
+        [self.navigationController pushViewController:chatView animated:YES];
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Suggested Prescription"]) {
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Patient"]) {
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Reports"]) {
+        ReportsViewController* report=[[ReportsViewController alloc]initWithNibName:@"ReportsViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:report animated:YES];
         
     }
     
