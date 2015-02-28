@@ -13,4 +13,5 @@
 @property (nonatomic,strong) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) IBOutlet UIButton *btn;
 -(IBAction)sendBtnTapped:(id)sender;
+-(IBAction)backbuttonTapped:(id)sender;
 @end
