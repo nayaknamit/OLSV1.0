@@ -12,7 +12,7 @@
 #import "NetworkManager.h"
 #import "AppDelegate.h"
 #import "PatientListViewController.h"
-#import "AttendantViewController.h"
+#import "AttentdantMainViewController.h"
 @interface LoginViewController (){
     NSInteger count;
     
@@ -123,7 +123,7 @@
                 appDelegate.userID = [dict objectForKey:@"id"];
                 
                 if([[dict objectForKey:@"accountType"] integerValue] == 3){
-                    AttendantViewController *patientList = [[AttendantViewController alloc]initWithNibName:@"AttendantViewController" bundle:Nil];
+                    AttentdantMainViewController *patientList = [[AttentdantMainViewController alloc]initWithNibName:@"AttentdantMainViewController" bundle:Nil];
                     
                     
                     [self.navigationController pushViewController:patientList animated:YES];
