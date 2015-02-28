@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ChatTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *bcImage;
-@property (weak, nonatomic) IBOutlet UILabel *text;
+@property (strong, nonatomic) IBOutlet UIImageView *bcImage;
+@property (strong, nonatomic) IBOutlet UILabel *text;
 
 @end

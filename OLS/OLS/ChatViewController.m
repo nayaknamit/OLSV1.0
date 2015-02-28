@@ -103,21 +103,25 @@
     static NSString *CellIdentifier = @"ChatCellIdentifier";
     
     ChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[ChatTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ChatTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
+
     NSString *s = (NSString *) [messages objectAtIndex:indexPath.row];
     NSArray* text=[s componentsSeparatedByString:@":"];
     NSString *sss=(NSString*)[text objectAtIndex:0];
+    cell.bcImage=[[UIImageView alloc]init];
     if ([sss isEqualToString:@" kartik"]) {
         cell.textLabel.text = s;
         cell.textLabel.textAlignment=UITextAlignmentRight;
-        cell.bcImage.image=[UIImage imageNamed:@"callout-2"];
+        cell.bcImage.image=[UIImage imageNamed:@"callout-2.png"];
     }
     else{
         cell.textLabel.text = s;
         cell.textLabel.textAlignment=UITextAlignmentLeft;
-        cell.bcImage.image=[UIImage imageNamed:@"callout-1"];
+        cell.bcImage.image=[UIImage imageNamed:@"callout-1.png"];
     }
     
     return cell;

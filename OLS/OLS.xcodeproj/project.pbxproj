@@ -44,6 +44,9 @@
 		B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */; };
 		B4C01A1E1AA1328800768170 /* AttentdantMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */; };
 		B4C01A1F1AA1328800768170 /* AttentdantMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */; };
+		B4C01A231AA1354C00768170 /* expenses.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A201AA1354C00768170 /* expenses.png */; };
+		B4C01A241AA1354C00768170 /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A211AA1354C00768170 /* report.png */; };
+		B4C01A251AA1354C00768170 /* Video.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A221AA1354C00768170 /* Video.png */; };
 		BA13371B1AA0EC6000B14E72 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371A1AA0EC6000B14E72 /* user.m */; };
 		BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371E1AA0F5B800B14E72 /* NetworkManager.m */; };
 		BA1337341AA0FD0400B14E72 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337221AA0FD0400B14E72 /* AFHTTPClient.m */; };
@@ -144,6 +147,10 @@
 		B4C01A1B1AA1328800768170 /* AttentdantMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttentdantMainViewController.h; path = ../AttentdantMainViewController.h; sourceTree = "<group>"; };
 		B4C01A1C1AA1328800768170 /* AttentdantMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttentdantMainViewController.m; path = ../AttentdantMainViewController.m; sourceTree = "<group>"; };
 		B4C01A1D1AA1328800768170 /* AttentdantMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttentdantMainViewController.xib; path = ../AttentdantMainViewController.xib; sourceTree = "<group>"; };
+		B4C01A201AA1354C00768170 /* expenses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expenses.png; sourceTree = "<group>"; };
+		B4C01A211AA1354C00768170 /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = "<group>"; };
+		B4C01A221AA1354C00768170 /* Video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Video.png; sourceTree = "<group>"; };
+		B4C01A261AA13BF600768170 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
 		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -236,6 +243,9 @@
 		297FC22D1A9F520300305402 /* OLS */ = {
 			isa = PBXGroup;
 			children = (
+				B4C01A201AA1354C00768170 /* expenses.png */,
+				B4C01A211AA1354C00768170 /* report.png */,
+				B4C01A221AA1354C00768170 /* Video.png */,
 				BA13377D1AA1336800B14E72 /* Doctor */,
 				BA13377C1AA1332400B14E72 /* Patient */,
 				BA1337471AA1204700B14E72 /* Images */,
@@ -263,14 +273,12 @@
 				297FC22E1A9F520300305402 /* Supporting Files */,
 				BA13371D1AA0F5B800B14E72 /* NetworkManager.h */,
 				BA13371E1AA0F5B800B14E72 /* NetworkManager.m */,
-
 				901D7BB91AA1171700CD21D9 /* AttendantViewController.h */,
 				901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */,
 				901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */,
 				901D7BC41AA12D9C00CD21D9 /* ChatTableViewCell.h */,
 				901D7BC51AA12D9C00CD21D9 /* ChatTableViewCell.m */,
 				901D7BC61AA12D9C00CD21D9 /* ChatTableViewCell.xib */,
-
 			);
 			path = OLS;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 			children = (
 				297FC22F1A9F520300305402 /* Info.plist */,
 				297FC2301A9F520300305402 /* main.m */,
+				B4C01A261AA13BF600768170 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -394,9 +403,6 @@
 		BA13377C1AA1332400B14E72 /* Patient */ = {
 			isa = PBXGroup;
 			children = (
-				901D7BB91AA1171700CD21D9 /* AttendantViewController.h */,
-				901D7BBA1AA1171700CD21D9 /* AttendantViewController.m */,
-				901D7BBB1AA1171700CD21D9 /* AttendantViewController.xib */,
 				BA1337421AA117C400B14E72 /* PatientListViewController.h */,
 				BA1337431AA117C400B14E72 /* PatientListViewController.m */,
 				BA1337441AA117C400B14E72 /* PatientListViewController.xib */,
@@ -517,6 +523,7 @@
 				B4C01A1F1AA1328800768170 /* AttentdantMainViewController.xib in Resources */,
 				901D7BC31AA1192D00CD21D9 /* header1.png in Resources */,
 				BA1337671AA12BFE00B14E72 /* callout-1.png in Resources */,
+				B4C01A241AA1354C00768170 /* report.png in Resources */,
 				901D7BC21AA1192D00CD21D9 /* header.png in Resources */,
 				906E87D91AA0FF3F0073A203 /* VideoStreamViewController.xib in Resources */,
 				906E87AB1AA0D31A0073A203 /* splashscreen1.png in Resources */,
@@ -542,6 +549,8 @@
 				906E87B71AA0DFA00073A203 /* splash7.png in Resources */,
 				BA13374F1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
+				B4C01A251AA1354C00768170 /* Video.png in Resources */,
+				B4C01A231AA1354C00768170 /* expenses.png in Resources */,
 				297FC23F1A9F520300305402 /* LaunchScreen.xib in Resources */,
 				BA13377B1AA1331C00B14E72 /* PatientExpenseViewController.xib in Resources */,
 				BA1337631AA12BFE00B14E72 /* report-icon.png in Resources */,
