@@ -26,7 +26,7 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     // Do any additional setup after loading the view from its nib.
-    [self performSelector:@selector(openStream) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(openStream) withObject:nil afterDelay:15.0];
 
 }
 
@@ -34,7 +34,7 @@
     self.streamButton.hidden = YES;
     self.webView.hidden = NO;
     self.webView.delegate= self;
-    NSURLRequest* request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.56.67:8080/1/stream.html"]];
+    NSURLRequest* request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://172.20.10.5:8080/1/stream.html"]];
     [self.webView loadRequest:request];
     //    float zoom=videoView.bounds.size.width/videoView.scrollView.contentSize.width;
     self.webView.scalesPageToFit=YES;
