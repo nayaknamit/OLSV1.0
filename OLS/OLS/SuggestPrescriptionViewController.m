@@ -8,16 +8,50 @@
 
 #import "SuggestPrescriptionViewController.h"
 
-@interface SuggestPrescriptionViewController ()
+@interface SuggestPrescriptionViewController (){
+    UIDatePicker* datepicker;
+}
+@property (weak, nonatomic) IBOutlet UITextField *reportSelection;
+@property (weak, nonatomic) IBOutlet UITextField *timeSelection;
+@property (weak, nonatomic) IBOutlet UITextView *textArea;
 
 @end
 
 @implementation SuggestPrescriptionViewController
+- (IBAction)submitAction:(id)sender {
+}
+
+- (IBAction)date:(id)sender {
+    datepicker=[[UIDatePicker alloc] initWithFrame:CGRectMake(0, 250, 325, 300)];
+    datepicker.datePickerMode = UIDatePickerModeDate;
+    datepicker.hidden = NO;
+    datepicker.date = [NSDate date];
+    
+    [datepicker addTarget:self
+                   action:@selector(LabelChange:)
+         forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:datepicker]; //this can set value of selected date to your label change according to your condition
+    
+    
+    NSDateFormatter * df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"M-d-yyyy"]; // from here u can change format..
+    self.timeSelection.text=[df stringFromDate:datepicker.date];
+}
+- (void)LabelChange:(id)sender{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"M-d-yyyy"];
+    self.timeSelection.text = [NSString stringWithFormat:@"%@",
+                          [df stringFromDate:datepicker.date]];
+    [datepicker removeFromSuperview];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
