@@ -6,6 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AttentdantMainViewController">
             <connections>
+                <outlet property="lblDocName" destination="3A5-pJ-O3x" id="31C-KS-2Qp"/>
+                <outlet property="lblDoctorMob" destination="56i-Od-7xx" id="caq-fO-pKJ"/>
+                <outlet property="lblICUNo" destination="EXt-rU-0ZH" id="ocu-P0-xme"/>
+                <outlet property="lblName" destination="1Uv-FD-oxW" id="t5r-1Y-J5J"/>
+                <outlet property="lblUID" destination="ofm-wn-fh2" id="8Z4-o2-rBS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

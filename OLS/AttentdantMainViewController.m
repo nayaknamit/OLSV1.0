@@ -40,12 +40,25 @@
         
         if(resultDict !=nil)
         {
-            BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
-            if (error == nil && success) {
+            
+            if (error == nil) {
                 // update the records of the user
+                
+                NSDictionary *dict = [[[resultDict objectForKey:@"posts"] objectAtIndex:0] objectForKey:@"patientDetails"];
+                [self performSelectorOnMainThread:@selector(updateData:) withObject:dict waitUntilDone:YES];
+    
             }
         }
         }];
+}
+-(void)updateData:(NSDictionary *)dict{
+    
+    
+    self.lblDocName.text = [dict objectForKey:@"doctorName"];
+    self.lblDoctorMob.text =[dict objectForKey:@"doc_mob"];
+    self.lblICUNo.text = [dict objectForKey:@"icuBadNo"];
+    self.lblName.text = [dict objectForKey:@"name"];
+    self.lblUID.text = [dict objectForKey:@"patientID"];
 }
 
 - (void)didReceiveMemoryWarning {

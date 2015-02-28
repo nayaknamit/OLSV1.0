@@ -17,10 +17,15 @@
 @property (strong, nonatomic) NSMutableArray *dataArra;
 @property (nonatomic,strong) IBOutlet UIWebView *webView;
 @property (nonatomic,strong) IBOutlet UITableView *tableView;
+-(IBAction)buttonTapped:(id)sender;
 @end
 
 @implementation PatientLiveViewController
+-(IBAction)buttonTapped:(id)sender{
+    NSURL * url = [NSURL URLWithString:@"http://172.20.10.3/smoothie/examples/example1.html"];
+    [_webView loadRequest:[NSURLRequest requestWithURL:url]];
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     _dataArra = [NSMutableArray array];
@@ -32,8 +37,8 @@
     
     [_dataArra addObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"Reports",@"label",@"icon14.png",@"image", nil]];
     
-    NSURL * url = [NSURL URLWithString:@"http://localhost/smoothie/examples/example1.html"];
-
+    NSURL * url = [NSURL URLWithString:@"http://172.20.10.3/smoothie/examples/example1.html"];
+    _webView.delegate  =self;
     [_webView loadRequest:[NSURLRequest requestWithURL:url]];
     [self initNetworkCommunication];
 
@@ -129,7 +134,12 @@
 //    [self presentViewController:clientView animated:YES completion:nil];
 }
 
-
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    
+}
 
 
 /*
