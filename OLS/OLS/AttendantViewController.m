@@ -26,7 +26,7 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     // Do any additional setup after loading the view from its nib.
-    [self performSelector:@selector(openStream) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(openStream) withObject:nil afterDelay:15.0];
 
 }
 

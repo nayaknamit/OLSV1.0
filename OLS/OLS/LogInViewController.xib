@@ -26,19 +26,19 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kartik" borderStyle="roundedRect" placeholder="UserName" minimumFontSize="17" id="RB4-SZ-V0H">
-                    <rect key="frame" x="56" y="132" width="263" height="30"/>
+                    <rect key="frame" x="56" y="255" width="263" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" id="0wW-iz-AbP">
-                    <rect key="frame" x="56" y="190" width="263" height="30"/>
+                    <rect key="frame" x="56" y="313" width="263" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Khu-03-bj6">
-                    <rect key="frame" x="56" y="258" width="258" height="52"/>
+                    <rect key="frame" x="56" y="381" width="258" height="52"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Login" backgroundImage="LOGIN-BTN.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,6 +47,10 @@
                         <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="wsP-Oh-r8E"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" id="FpC-FQ-lCW">
+                    <rect key="frame" x="132" y="100" width="112" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -57,6 +61,7 @@
         <image name="LOGIN-BTN.png" width="492" height="98"/>
         <image name="loginbg.png" width="584" height="776"/>
         <image name="loginbg1.png" width="750" height="1334"/>
+        <image name="logo.png" width="223" height="223"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

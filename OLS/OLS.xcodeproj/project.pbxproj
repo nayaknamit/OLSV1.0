@@ -47,6 +47,7 @@
 		B4C01A231AA1354C00768170 /* expenses.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A201AA1354C00768170 /* expenses.png */; };
 		B4C01A241AA1354C00768170 /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A211AA1354C00768170 /* report.png */; };
 		B4C01A251AA1354C00768170 /* Video.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A221AA1354C00768170 /* Video.png */; };
+		B4C01A281AA1556200768170 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A271AA1556200768170 /* logo.png */; };
 		BA13371B1AA0EC6000B14E72 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371A1AA0EC6000B14E72 /* user.m */; };
 		BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371E1AA0F5B800B14E72 /* NetworkManager.m */; };
 		BA1337341AA0FD0400B14E72 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337221AA0FD0400B14E72 /* AFHTTPClient.m */; };
@@ -151,6 +152,7 @@
 		B4C01A211AA1354C00768170 /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = "<group>"; };
 		B4C01A221AA1354C00768170 /* Video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Video.png; sourceTree = "<group>"; };
 		B4C01A261AA13BF600768170 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B4C01A271AA1556200768170 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
 		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				901D7BC01AA1192D00CD21D9 /* header.png */,
 				901D7BC11AA1192D00CD21D9 /* header1.png */,
 				901D7BBE1AA1191D00CD21D9 /* attender1.png */,
+				B4C01A271AA1556200768170 /* logo.png */,
 				906E87BE1AA0EE120073A203 /* INPUT-FIELD.png */,
 				906E87BF1AA0EE120073A203 /* inputfield.png */,
 				906E87C01AA0EE120073A203 /* LOGIN-BTN.png */,
@@ -556,6 +559,7 @@
 				BA1337631AA12BFE00B14E72 /* report-icon.png in Resources */,
 				B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */,
 				BA1337711AA12BFE00B14E72 /* input-chat.png in Resources */,
+				B4C01A281AA1556200768170 /* logo.png in Resources */,
 				906E87C41AA0EE120073A203 /* inputfield.png in Resources */,
 				BA1337511AA1217400B14E72 /* PatientLiveViewController.xib in Resources */,
 				906E87AE1AA0D31A0073A203 /* splashscreen4.png in Resources */,
