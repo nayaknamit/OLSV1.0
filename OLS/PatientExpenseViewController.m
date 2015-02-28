@@ -17,6 +17,7 @@
 NSMutableArray *nameDictArra;
 NSMutableArray *expectedDictExpArra;
 NSInteger totalAmount;
+NSInteger totalExpectedAmount;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -36,7 +37,7 @@ NSInteger totalAmount;
     NSMutableDictionary *data1 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"200",@"amount",@"BloodTest",@"expenseName", nil];
     NSMutableDictionary *data2 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"250",@"amount",@"ECG",@"expenseName", nil];
     NSMutableDictionary *data3 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"2000",@"amount",@"CT scan",@"expenseName", nil];
-    
+        totalExpectedAmount = 2000+250+200;
         [expectedDictExpArra addObject:data1];
         [expectedDictExpArra addObject:data2];
         [expectedDictExpArra addObject:data3];
@@ -125,7 +126,7 @@ NSInteger totalAmount;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
 
-    NSDictionary *dict = [nameDictArra objectAtIndex:indexPath.row];
+    NSDictionary *dict = Nil;
 
     if(self.ExpenseSegment.selectedSegmentIndex==0){
         dict = [nameDictArra objectAtIndex:indexPath.row];
@@ -149,16 +150,12 @@ NSInteger totalAmount;
 
 -(IBAction)segmentedIndexChange:(id)sender{
     
-    NSInteger selectedIndex =     self.ExpenseSegment.selectedSegmentIndex;
-    
-    if(selectedIndex==0){
-    
-    
-    }else{
-    
-        
-    }
     [self.ExpenseTable reloadData];
-
+    if(self.ExpenseSegment.selectedSegmentIndex==0){
+        self.totalExpLbl.text = [NSString stringWithFormat:@"%ld",(long)totalAmount];;
+    }else{
+        self.totalExpLbl.text = [NSString stringWithFormat:@"%ld",(long)totalExpectedAmount];;
+    }
+    
 }
 @end
