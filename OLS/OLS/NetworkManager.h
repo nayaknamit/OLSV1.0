@@ -11,7 +11,8 @@
 typedef enum{
     OLSUSERINFORMATION=0,
     OLSPATIENTLIST,
-    OLSPATIENTDETAIL
+    OLSPATIENTDETAIL,
+    OLSPATIENTEXPENDITUREDETAIL
 
 }REQUEST_TYPE;
 
@@ -28,5 +29,7 @@ typedef void (^OLSGetPatientDetailAPIRequestHandler)(NSDictionary *resultDict, N
 -(void)getPatientList:(NSString*)userID withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetPatientAPIRequestHandler)responseHandler;
 
 -(void)getPatientDetailList:(NSString*)userID withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetPatientDetailAPIRequestHandler)responseHandler;
+
+-(void)getPatientExpenditureDetail:(NSString*)userID withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetPatientDetailAPIRequestHandler)responseHandler;
 
 @end

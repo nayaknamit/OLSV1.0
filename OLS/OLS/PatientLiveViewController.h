@@ -10,4 +10,5 @@
 
 @interface PatientLiveViewController : UIViewController <NSStreamDelegate>
 @property (nonatomic,strong)NSMutableArray *patientArr;
+@property (nonatomic,strong)NSMutableDictionary *dataDictionary;
 @end

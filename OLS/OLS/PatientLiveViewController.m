@@ -83,7 +83,8 @@
 {
     NSMutableDictionary *dict = [_dataArra objectAtIndex:indexPath.row];
     if ([[dict objectForKey:@"label"] isEqualToString:@"Chat"]) {
-          [self joinNetwork];
+        ChatViewController* chatView=[[ChatViewController alloc]init];
+        [self presentViewController:chatView animated:YES completion:nil];
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Suggested Prescription"]) {
         
