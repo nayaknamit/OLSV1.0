@@ -39,6 +39,8 @@
 		906E87CF1AA0F3940073A203 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E87CE1AA0F3940073A203 /* LoginViewController.m */; };
 		906E87D81AA0FF3F0073A203 /* VideoStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E87D61AA0FF3F0073A203 /* VideoStreamViewController.m */; };
 		906E87D91AA0FF3F0073A203 /* VideoStreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906E87D71AA0FF3F0073A203 /* VideoStreamViewController.xib */; };
+		90C528701AA17335002913C6 /* SuggestPrescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C5286E1AA17335002913C6 /* SuggestPrescriptionViewController.m */; };
+		90C528711AA17335002913C6 /* SuggestPrescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C5286F1AA17335002913C6 /* SuggestPrescriptionViewController.xib */; };
 		B4C019B21AA0E3F600768170 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B01AA0E3F600768170 /* ChatViewController.m */; };
 		B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C019B11AA0E3F600768170 /* ChatViewController.xib */; };
 		B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C019B61AA0E70200768170 /* LiveStreamingViewController.m */; };
@@ -142,6 +144,9 @@
 		906E87D51AA0FF3F0073A203 /* VideoStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoStreamViewController.h; sourceTree = "<group>"; };
 		906E87D61AA0FF3F0073A203 /* VideoStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoStreamViewController.m; sourceTree = "<group>"; };
 		906E87D71AA0FF3F0073A203 /* VideoStreamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoStreamViewController.xib; sourceTree = "<group>"; };
+		90C5286D1AA17335002913C6 /* SuggestPrescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestPrescriptionViewController.h; sourceTree = "<group>"; };
+		90C5286E1AA17335002913C6 /* SuggestPrescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestPrescriptionViewController.m; sourceTree = "<group>"; };
+		90C5286F1AA17335002913C6 /* SuggestPrescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuggestPrescriptionViewController.xib; sourceTree = "<group>"; };
 		B4C019AF1AA0E3F600768170 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B4C019B01AA0E3F600768170 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B4C019B11AA0E3F600768170 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
@@ -286,6 +291,9 @@
 				901D7BC41AA12D9C00CD21D9 /* ChatTableViewCell.h */,
 				901D7BC51AA12D9C00CD21D9 /* ChatTableViewCell.m */,
 				901D7BC61AA12D9C00CD21D9 /* ChatTableViewCell.xib */,
+				90C5286D1AA17335002913C6 /* SuggestPrescriptionViewController.h */,
+				90C5286E1AA17335002913C6 /* SuggestPrescriptionViewController.m */,
+				90C5286F1AA17335002913C6 /* SuggestPrescriptionViewController.xib */,
 			);
 			path = OLS;
 			sourceTree = "<group>";
@@ -558,6 +566,7 @@
 				BA1337461AA117C400B14E72 /* PatientListViewController.xib in Resources */,
 				BA1337701AA12BFE00B14E72 /* input-bg.png in Resources */,
 				BA1337641AA12BFE00B14E72 /* video-icon.png in Resources */,
+				90C528711AA17335002913C6 /* SuggestPrescriptionViewController.xib in Resources */,
 				906E87B71AA0DFA00073A203 /* splash7.png in Resources */,
 				BA13374F1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib in Resources */,
 				906E87AF1AA0D31A0073A203 /* splashscreen5.png in Resources */,
@@ -597,6 +606,7 @@
 				BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */,
 				906E87D81AA0FF3F0073A203 /* VideoStreamViewController.m in Sources */,
 				297FC2371A9F520300305402 /* ViewController.m in Sources */,
+				90C528701AA17335002913C6 /* SuggestPrescriptionViewController.m in Sources */,
 				B4C019B71AA0E70200768170 /* LiveStreamingViewController.m in Sources */,
 				B4C01A1E1AA1328800768170 /* AttentdantMainViewController.m in Sources */,
 				297FC25A1A9F532C00305402 /* HelperClass.m in Sources */,
