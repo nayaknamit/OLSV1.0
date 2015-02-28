@@ -7,7 +7,8 @@
 //
 
 #import "AttentdantMainViewController.h"
-
+#import "NetworkManager.h"
+#import "AppDelegate.h"
 @interface AttentdantMainViewController ()
 
 @end
@@ -16,9 +17,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.navigationController.navigationBar.layer.contents = (id)[UIImage
+                                                                  imageNamed:@"header1.png"].CGImage;    // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [[NetworkManager sharedInstance] getPatientDetailList:delegate.userID withResponseType:OLSPATIENTDETAIL responseHandler:^(NSDictionary *resultDict, NSError *error) {
+        
+        if (resultDict == nil && error == nil) {
+            //            [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:NSLocalizedString(@"INVALID_USERNAME_PASSWORD",nil)];
+        }
+        
+        
+        if(resultDict !=nil)
+        {
+            BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
+            if (error == nil && success) {
+                // update the records of the user
+            }
+        }
+        }];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
