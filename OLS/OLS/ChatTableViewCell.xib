@@ -25,6 +25,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="bcImage" destination="1QP-8u-fBP" id="jfg-vr-w2Q"/>
                 <outlet property="text" destination="7Yn-pk-OEe" id="Rnv-k4-Mvt"/>
