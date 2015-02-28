@@ -19,10 +19,12 @@
 
 @implementation SuggestPrescriptionViewController
 - (IBAction)submitAction:(id)sender {
+
     self.reportSelection.text=@"";
     self.timeSelection.text=@"";
     UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Alert" message:@"The prescription has been saved to database" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alert show];
+
 }
 
 - (IBAction)date:(id)sender {

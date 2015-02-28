@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) NSString *userID;
-
+@property (strong, nonatomic) NSString *patientName;
 
 @end
 

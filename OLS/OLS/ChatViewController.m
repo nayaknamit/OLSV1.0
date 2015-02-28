@@ -8,7 +8,7 @@
 
 #import "ChatViewController.h"
 #import "ChatTableViewCell.h"
-
+#import "AppDelegate.h"
 @interface ChatViewController (){
     NSMutableArray * messages;
     NSInputStream *inputStream;
@@ -26,7 +26,7 @@
     
     CFReadStreamRef readStream;
     CFWriteStreamRef writeStream;
-    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"localhost", 80, &readStream, &writeStream);
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)@"172.20.10.5", 80, &readStream, &writeStream);
     inputStream = (__bridge NSInputStream *)readStream;
     outputStream = (__bridge NSOutputStream *)writeStream;
     //    [inputStream setDelegate:self];
@@ -39,7 +39,8 @@
 }
 
 - (void)joinNetwork{
-    NSString *response  = [NSString stringWithFormat:@"iam: kartik"];
+    AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
+    NSString *response  = [NSString stringWithFormat:@"iam: %@",appDelegate.patientName];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
     [outputStream write:[data bytes] maxLength:[data length]];
 //    ChatViewController * clientView=[[ChatViewController alloc]init];
