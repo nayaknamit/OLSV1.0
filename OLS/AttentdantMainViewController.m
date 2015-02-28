@@ -11,6 +11,9 @@
 #import "AppDelegate.h"
 @interface AttentdantMainViewController ()
 
+-(IBAction)videoStreamTapped:(id)sender;
+-(IBAction)expenseTapped:(id)sender;
+-(IBAction)reportsTapped:(id)sender;
 @end
 
 @implementation AttentdantMainViewController
@@ -46,6 +49,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)videoStreamTapped:(id)sender{
+    
+}
+-(IBAction)expenseTapped:(id)sender{
+    
+}
+-(IBAction)reportsTapped:(id)sender{
+    
+}
 /*
 #pragma mark - Navigation
 

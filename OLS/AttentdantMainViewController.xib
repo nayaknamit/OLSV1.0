@@ -85,18 +85,27 @@
                             <state key="normal" title="Button" image="expenses.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="expenseTapped:" destination="-1" eventType="touchUpInside" id="kfn-rN-wAF"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLj-au-Qoy">
                             <rect key="frame" x="192" y="36" width="175" height="122"/>
                             <state key="normal" title="Button" image="report.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="reportsTapped:" destination="-1" eventType="touchUpInside" id="j7r-0B-R0P"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMR-ZY-VZa">
                             <rect key="frame" x="8" y="181" width="358" height="163"/>
                             <state key="normal" title="Button" image="Video.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="videoStreamTapped:" destination="-1" eventType="touchUpInside" id="dYq-8q-vEr"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
