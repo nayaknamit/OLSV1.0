@@ -10,6 +10,7 @@
 #import "ChatViewController.h"
 #import "ReportsViewController.h"
 #import "PatientLiveCellTableViewCell.h"
+#import "SuggestPrescriptionViewController.h"
 @interface PatientLiveViewController (){
     
     NSInputStream *inputStream;
@@ -96,7 +97,8 @@
         [self.navigationController pushViewController:chatView animated:YES];
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Suggested Prescription"]) {
-        
+        SuggestPrescriptionViewController* prescription=[[SuggestPrescriptionViewController alloc]initWithNibName:@"SuggestPrescriptionViewController" bundle:nil];
+        [self.navigationController pushViewController:prescription animated:YES];
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Patient"]) {
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Reports"]) {
