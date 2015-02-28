@@ -25,9 +25,9 @@
                     </connections>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yKV-8G-rsw">
-                    <rect key="frame" x="56" y="8" width="248" height="29"/>
+                    <rect key="frame" x="56" y="8" width="280" height="29"/>
                     <segments>
-                        <segment title="Current Expend"/>
+                        <segment title="Current Expenditure"/>
                         <segment title="Expected Expenditure"/>
                     </segments>
                 </segmentedControl>

@@ -9,6 +9,7 @@
 #import "AttentdantMainViewController.h"
 #import "NetworkManager.h"
 #import "AppDelegate.h"
+#import "PatientExpenseViewController.h"
 @interface AttentdantMainViewController ()
 
 -(IBAction)videoStreamTapped:(id)sender;
@@ -44,6 +45,7 @@
         }
         }];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -52,7 +54,12 @@
 -(IBAction)videoStreamTapped:(id)sender{
     
 }
+
 -(IBAction)expenseTapped:(id)sender{
+ 
+    PatientExpenseViewController *PEVC = [[PatientExpenseViewController alloc]initWithNibName:@"PatientExpenseViewController" bundle:Nil];
+    
+    [self.navigationController pushViewController:PEVC animated:YES];
     
 }
 -(IBAction)reportsTapped:(id)sender{

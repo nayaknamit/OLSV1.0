@@ -7,7 +7,8 @@
 //
 
 #import "PatientExpenseViewController.h"
-
+#import "NetworkManager.h"
+#import "AppDelegate.h"
 @interface PatientExpenseViewController ()
 
 @end
@@ -26,7 +27,38 @@
 
 -(void)viewWillAppear:(BOOL)animated{
 
+    NetworkManager *networkManger = [NetworkManager sharedInstance];
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    
+    [networkManger getPatientExpenditureDetail:appDelegate.userID withResponseType:OLSPATIENTEXPENDITUREDETAIL responseHandler:^(NSDictionary *resultDict,NSError *error){
+        
+        
+        if (resultDict == nil && error == nil) {
+            //            [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:NSLocalizedString(@"INVALID_USERNAME_PASSWORD",nil)];
+        }
+        
+        
+        if(resultDict !=nil)
+        {
+            BOOL success = [[resultDict objectForKey:@"Success"] boolValue];
+            if (error == nil && success) {
+                // update the records of the user in core data
+                
 
+            }else{
+                
+                NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
+                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                
+            }
+            
+        }else{
+            if(error !=nil){
+                NSString *errorMessage = error.localizedDescription;
+                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+            }
+        }
+    }];
 }
 
 /*
@@ -62,6 +94,13 @@
     
 //    cell.textLabel.text  = [dict objectForKey:@"name"];
     return cell;
+}
+
+- (void)showAlert:(NSString*)titleText body:(NSString *)bodyText {
+    
+    UIAlertView *ErrorAlertView = [[UIAlertView alloc]initWithTitle:titleText message:bodyText delegate:nil cancelButtonTitle:NSLocalizedString(@"ALERT_VIEW_OK","nil") otherButtonTitles:Nil, nil];
+    [ErrorAlertView show];
+    
 }
 
 @end
