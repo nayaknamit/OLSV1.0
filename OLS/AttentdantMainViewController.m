@@ -20,6 +20,9 @@
 @end
 
 @implementation AttentdantMainViewController
+- (IBAction)backButtonTapped:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

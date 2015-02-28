@@ -20,6 +20,9 @@
 @end
 
 @implementation PatientLiveViewController
+- (IBAction)backButtonTapped:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -84,7 +87,7 @@
     NSMutableDictionary *dict = [_dataArra objectAtIndex:indexPath.row];
     if ([[dict objectForKey:@"label"] isEqualToString:@"Chat"]) {
         ChatViewController* chatView=[[ChatViewController alloc]init];
-        [self presentViewController:chatView animated:YES completion:nil];
+        [self.navigationController presentViewController:chatView animated:YES completion:nil];
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Suggested Prescription"]) {
         
