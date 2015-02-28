@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PatientExpenseViewController : UIViewController
+@interface PatientExpenseViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property(nonatomic,strong) IBOutlet UITableView *ExpenseTable;
+@property(nonatomic,strong) IBOutlet UISegmentedControl *ExpenseSegment;
 
 @end
