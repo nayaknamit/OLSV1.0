@@ -26,17 +26,28 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     // Do any additional setup after loading the view from its nib.
+    [self performSelector:@selector(openStream) withObject:nil afterDelay:2.0];
+
 }
 
 -(void)openStream{
-    VideoStreamViewController *videoStream=[[VideoStreamViewController alloc]init];
-    [self presentViewController:videoStream animated:YES completion:nil];
+    self.streamButton.hidden = YES;
+    self.webView.hidden = NO;
+    self.webView.delegate= self;
+    NSURLRequest* request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.56.67:8080/1/stream.html"]];
+    [self.webView loadRequest:request];
+    //    float zoom=videoView.bounds.size.width/videoView.scrollView.contentSize.width;
+    self.webView.scalesPageToFit=YES;
 }
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"Error : %@",error);
+}
+
 
 - (IBAction)backButtonTapped:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
