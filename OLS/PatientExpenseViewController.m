@@ -24,6 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+
+
+}
+
 /*
 #pragma mark - Navigation
 
@@ -33,5 +38,30 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;//[nameDictArra count];
+    
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *CellIdentifier = @"patientExpenseCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    if(cell == nil){
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+//    NSDictionary *dict = [nameDictArra objectAtIndex:indexPath.row];
+    
+//    cell.textLabel.text  = [dict objectForKey:@"name"];
+    return cell;
+}
 
 @end
