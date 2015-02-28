@@ -34,7 +34,7 @@
     self.streamButton.hidden = YES;
     self.webView.hidden = NO;
     self.webView.delegate= self;
-    NSURLRequest* request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.56.67:8080/1/stream.html"]];
+    NSURLRequest* request=[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://172.20.10.5:8080/1/stream.html"]];
     [self.webView loadRequest:request];
     //    float zoom=videoView.bounds.size.width/videoView.scrollView.contentSize.width;
     self.webView.scalesPageToFit=YES;
@@ -84,7 +84,7 @@
             break;
         case 1:{
             ChatViewController * chat=[[ChatViewController alloc]init];
-            [self presentViewController:chat animated:YES completion:nil];
+            [self.navigationController addChildViewController:chat];
             break;
         }
         case 2:

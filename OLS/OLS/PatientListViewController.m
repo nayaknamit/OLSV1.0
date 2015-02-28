@@ -17,6 +17,11 @@
 @end
 
 @implementation PatientListViewController
+- (IBAction)backBottonTapped:(id)sender {
+
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -124,7 +129,7 @@ NetworkManager *networkManager = [NetworkManager sharedInstance];
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     PatientLiveViewController* patientView=[[PatientLiveViewController alloc]init];
     patientView.dataDictionary=[nameDictArra objectAtIndex:indexPath.row];
-    [self presentViewController:patientView animated:YES completion:nil];
+    [self.navigationController presentViewController:patientView animated:YES completion:nil];
 }
 
 @end

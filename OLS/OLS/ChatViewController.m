@@ -64,12 +64,15 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     [UIView animateWithDuration:0.01 animations:^{
-        self.tView.frame = CGRectMake(self.tView.frame.origin.x, self.tView.frame.origin.y, self.tView.frame.size.width, 480);
+        self.tView.frame = CGRectMake(self.tView.frame.origin.x, self.tView.frame.origin.y, self.tView.frame.size.width, 678);
         
-        self.chatTextView.frame = CGRectMake(self.chatTextView.frame.origin.x, 270, self.chatTextView.frame.size.width, self.chatTextView.frame.size.height);
+        self.chatTextView.frame = CGRectMake(self.chatTextView.frame.origin.x, self.chatTextView.frame.origin.y, self.chatTextView.frame.size.width, self.chatTextView.frame.size.height);
         
     }];
     return false;
+}
+- (IBAction)backButtonTapped:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
