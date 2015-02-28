@@ -49,6 +49,8 @@
 		B4C01A251AA1354C00768170 /* Video.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A221AA1354C00768170 /* Video.png */; };
 		B4C01A281AA1556200768170 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A271AA1556200768170 /* logo.png */; };
 		B4C01A2A1AA16DC000768170 /* PatientLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A291AA16DC000768170 /* PatientLiveViewController.xib */; };
+		B4C01A2E1AA1715B00768170 /* ReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C01A2C1AA1715B00768170 /* ReportsViewController.m */; };
+		B4C01A2F1AA1715B00768170 /* ReportsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C01A2D1AA1715B00768170 /* ReportsViewController.xib */; };
 		BA13371B1AA0EC6000B14E72 /* user.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371A1AA0EC6000B14E72 /* user.m */; };
 		BA13371F1AA0F5B800B14E72 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13371E1AA0F5B800B14E72 /* NetworkManager.m */; };
 		BA1337341AA0FD0400B14E72 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337221AA0FD0400B14E72 /* AFHTTPClient.m */; };
@@ -154,6 +156,9 @@
 		B4C01A261AA13BF600768170 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B4C01A271AA1556200768170 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B4C01A291AA16DC000768170 /* PatientLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveViewController.xib; sourceTree = "<group>"; };
+		B4C01A2B1AA1715B00768170 /* ReportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportsViewController.h; sourceTree = "<group>"; };
+		B4C01A2C1AA1715B00768170 /* ReportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportsViewController.m; sourceTree = "<group>"; };
+		B4C01A2D1AA1715B00768170 /* ReportsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportsViewController.xib; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
 		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -421,6 +426,9 @@
 				B4C01A291AA16DC000768170 /* PatientLiveViewController.xib */,
 				BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */,
 				BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */,
+				B4C01A2B1AA1715B00768170 /* ReportsViewController.h */,
+				B4C01A2C1AA1715B00768170 /* ReportsViewController.m */,
+				B4C01A2D1AA1715B00768170 /* ReportsViewController.xib */,
 			);
 			name = Patient;
 			sourceTree = "<group>";
@@ -560,6 +568,7 @@
 				BA1337631AA12BFE00B14E72 /* report-icon.png in Resources */,
 				B4C019B31AA0E3F600768170 /* ChatViewController.xib in Resources */,
 				BA1337711AA12BFE00B14E72 /* input-chat.png in Resources */,
+				B4C01A2F1AA1715B00768170 /* ReportsViewController.xib in Resources */,
 				B4C01A281AA1556200768170 /* logo.png in Resources */,
 				906E87C41AA0EE120073A203 /* inputfield.png in Resources */,
 				906E87AE1AA0D31A0073A203 /* splashscreen4.png in Resources */,
@@ -604,6 +613,7 @@
 				BA1337371AA0FD0400B14E72 /* AFJSONRequestOperation.m in Sources */,
 				297FC2311A9F520300305402 /* main.m in Sources */,
 				BA1337341AA0FD0400B14E72 /* AFHTTPClient.m in Sources */,
+				B4C01A2E1AA1715B00768170 /* ReportsViewController.m in Sources */,
 				901D7BC71AA12D9C00CD21D9 /* ChatTableViewCell.m in Sources */,
 				B4C019B21AA0E3F600768170 /* ChatViewController.m in Sources */,
 				BA1337381AA0FD0400B14E72 /* AFNetworkActivityIndicatorManager.m in Sources */,
