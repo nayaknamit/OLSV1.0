@@ -128,13 +128,15 @@
                     
                     
                     [self.navigationController pushViewController:patientList animated:YES];
-                    
+                    return ;
                 }
+                else if([[dict objectForKey:@"accountType"] integerValue] == 1)
+                {
                 PatientListViewController *patientList = [[PatientListViewController alloc]initWithNibName:@"PatientListViewController" bundle:Nil];
 
                 
                 [self.navigationController pushViewController:patientList animated:YES];
-              
+                }
             }else{
                 
                 NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
