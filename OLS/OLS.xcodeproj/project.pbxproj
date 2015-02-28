@@ -150,6 +150,7 @@
 		B4C01A201AA1354C00768170 /* expenses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expenses.png; sourceTree = "<group>"; };
 		B4C01A211AA1354C00768170 /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = "<group>"; };
 		B4C01A221AA1354C00768170 /* Video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Video.png; sourceTree = "<group>"; };
+		B4C01A261AA13BF600768170 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BA1337191AA0EC6000B14E72 /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = user.h; path = DataModel/user.h; sourceTree = "<group>"; };
 		BA13371A1AA0EC6000B14E72 /* user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = user.m; path = DataModel/user.m; sourceTree = "<group>"; };
 		BA13371D1AA0F5B800B14E72 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
@@ -287,6 +288,7 @@
 			children = (
 				297FC22F1A9F520300305402 /* Info.plist */,
 				297FC2301A9F520300305402 /* main.m */,
+				B4C01A261AA13BF600768170 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

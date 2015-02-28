@@ -12,7 +12,7 @@
 #import "NetworkManager.h"
 #import "AppDelegate.h"
 #import "PatientListViewController.h"
-
+#import "AttendantViewController.h"
 @interface LoginViewController (){
     NSInteger count;
     
@@ -118,7 +118,18 @@
                 // update the records of the user in core data
                 
                 AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
-//                appDelegate.userID = 
+//                appDelegate.userID =
+                
+                NSDictionary *dict = [[[resultDict objectForKey:@"posts"] objectAtIndex:0] objectForKey:@"users"];
+                appDelegate.userID = [dict objectForKey:@"id"];
+                
+                if([[dict objectForKey:@"accountType"] integerValue] == 3){
+                    AttendantViewController *patientList = [[AttendantViewController alloc]initWithNibName:@"AttendantViewController" bundle:Nil];
+                    
+                    
+                    [self.navigationController pushViewController:patientList animated:YES];
+                    
+                }
                 PatientListViewController *patientList = [[PatientListViewController alloc]initWithNibName:@"PatientListViewController" bundle:Nil];
 
                 
