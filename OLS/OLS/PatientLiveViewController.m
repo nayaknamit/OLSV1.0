@@ -24,8 +24,11 @@
 -(IBAction)buttonTapped:(id)sender{
     NSURL * url = [NSURL URLWithString:@"http://172.20.10.3/smoothie/examples/example1.html"];
     [_webView loadRequest:[NSURLRequest requestWithURL:url]];
-
 }
+- (IBAction)backButtonTapped:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _dataArra = [NSMutableArray array];
@@ -89,7 +92,7 @@
     NSMutableDictionary *dict = [_dataArra objectAtIndex:indexPath.row];
     if ([[dict objectForKey:@"label"] isEqualToString:@"Chat"]) {
         ChatViewController* chatView=[[ChatViewController alloc]init];
-        [self presentViewController:chatView animated:YES completion:nil];
+        [self.navigationController presentViewController:chatView animated:YES completion:nil];
         
     }else if ([[dict objectForKey:@"label"] isEqualToString:@"Suggested Prescription"]) {
         

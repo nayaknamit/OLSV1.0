@@ -64,7 +64,6 @@
 		BA13374E1AA1217400B14E72 /* PatientLiveCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1337491AA1217400B14E72 /* PatientLiveCellTableViewCell.m */; };
 		BA13374F1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */; };
 		BA1337501AA1217400B14E72 /* PatientLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */; };
-		BA1337511AA1217400B14E72 /* PatientLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */; };
 		BA1337621AA12BFE00B14E72 /* expense-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA1337521AA12BFE00B14E72 /* expense-icon.png */; };
 		BA1337631AA12BFE00B14E72 /* report-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA1337531AA12BFE00B14E72 /* report-icon.png */; };
 		BA1337641AA12BFE00B14E72 /* video-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BA1337541AA12BFE00B14E72 /* video-icon.png */; };
@@ -184,7 +183,6 @@
 		BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveCellTableViewCell.xib; sourceTree = "<group>"; };
 		BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientLiveViewController.h; sourceTree = "<group>"; };
 		BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLiveViewController.m; sourceTree = "<group>"; };
-		BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientLiveViewController.xib; sourceTree = "<group>"; };
 		BA1337521AA12BFE00B14E72 /* expense-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "expense-icon.png"; path = "../expense-icon.png"; sourceTree = "<group>"; };
 		BA1337531AA12BFE00B14E72 /* report-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "report-icon.png"; path = "../report-icon.png"; sourceTree = "<group>"; };
 		BA1337541AA12BFE00B14E72 /* video-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video-icon.png"; path = "../video-icon.png"; sourceTree = "<group>"; };
@@ -420,7 +418,6 @@
 				BA13374A1AA1217400B14E72 /* PatientLiveCellTableViewCell.xib */,
 				BA13374B1AA1217400B14E72 /* PatientLiveViewController.h */,
 				BA13374C1AA1217400B14E72 /* PatientLiveViewController.m */,
-				BA13374D1AA1217400B14E72 /* PatientLiveViewController.xib */,
 			);
 			name = Patient;
 			sourceTree = "<group>";
@@ -561,7 +558,6 @@
 				BA1337711AA12BFE00B14E72 /* input-chat.png in Resources */,
 				B4C01A281AA1556200768170 /* logo.png in Resources */,
 				906E87C41AA0EE120073A203 /* inputfield.png in Resources */,
-				BA1337511AA1217400B14E72 /* PatientLiveViewController.xib in Resources */,
 				906E87AE1AA0D31A0073A203 /* splashscreen4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

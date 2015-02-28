@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface LoginViewController : ViewController<NSStreamDelegate>
+@interface LoginViewController : ViewController<NSStreamDelegate,UITextFieldDelegate>
 
 @property (strong,nonatomic)NSTimer *timer;
 

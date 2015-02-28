@@ -84,7 +84,7 @@
             break;
         case 1:{
             ChatViewController * chat=[[ChatViewController alloc]init];
-            [self presentViewController:chat animated:YES completion:nil];
+            [self.navigationController addChildViewController:chat];
             break;
         }
         case 2:
