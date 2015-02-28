@@ -116,15 +116,15 @@
     NSString *s = (NSString *) [messages objectAtIndex:indexPath.row];
     NSArray* text=[s componentsSeparatedByString:@":"];
     NSString *sss=(NSString*)[text objectAtIndex:0];
-//    cell.bcImage=[[UIImageView alloc]init];
-    if ([sss isEqualToString:@" kartik"]) {
+     AppDelegate *appDelegate =    ((AppDelegate *)[UIApplication sharedApplication].delegate);
+    if ([sss isEqualToString:[NSString stringWithFormat:@" %@",appDelegate.patientName]]) {
         cell.text.text = s;
-        cell.text.textAlignment=UITextAlignmentRight;
+        cell.text.textAlignment=NSTextAlignmentRight;
         cell.bcImage.image=[UIImage imageNamed:@"callout-2.png"];
     }
     else{
         cell.text.text = s;
-        cell.text.textAlignment=UITextAlignmentLeft;
+        cell.text.textAlignment=NSTextAlignmentRight;
         cell.bcImage.image=[UIImage imageNamed:@"callout-1.png"];
     }
     
