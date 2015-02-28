@@ -38,8 +38,10 @@ static NetworkManager *sharedInstance = nil;
 
 -(void)getUserInformation:(NSString*)userName withPass:(NSString*)pass withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetuserAPIRequestHandler)responseHandler{
     
+
 //    http://192.168.56.87:8888/health/web-service.php?user=ashish&method=Login&password=password
     NSString *webServicePathRaw = @"http://172.20.10.3/health/web-service.php?method=Login";
+
     NSString *webServicePath = [NSString stringWithFormat:@"%@&user=%@&password=%@",webServicePathRaw,userName,pass];
 
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -91,6 +93,7 @@ static NetworkManager *sharedInstance = nil;
 
 //http://192.168.56.87:8888/health/web-service.php?method=patientList&userID=4
     NSString *webServicePathRaw = @"http://172.20.10.3/health/web-service.php?method=patientList";
+
     NSString *webServicePath = [NSString stringWithFormat:@"%@&userID=%@",webServicePathRaw,userID];
     
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -133,6 +136,7 @@ static NetworkManager *sharedInstance = nil;
 
 -(void)getPatientDetailList:(NSString*)userID withResponseType:(REQUEST_TYPE)reqType responseHandler:(OLSGetPatientDetailAPIRequestHandler)responseHandler{
     
+
     //http://192.168.56.87:8888/health/web-service.php?method=patientList&userID=4
     NSString *webServicePathRaw = @"http://172.20.10.3/health/web-service.php?method=patientDetails";
     NSString *webServicePath = [NSString stringWithFormat:@"%@&userID=%@",webServicePathRaw,userID];

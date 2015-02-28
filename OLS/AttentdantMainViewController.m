@@ -10,6 +10,8 @@
 #import "NetworkManager.h"
 #import "AppDelegate.h"
 #import "PatientExpenseViewController.h"
+#import "AttendantViewController.h"
+
 @interface AttentdantMainViewController ()
 
 -(IBAction)videoStreamTapped:(id)sender;
@@ -52,7 +54,8 @@
 }
 
 -(IBAction)videoStreamTapped:(id)sender{
-    
+    AttendantViewController *att  = [[AttendantViewController alloc] initWithNibName:@"AttendantViewController" bundle:nil];
+    [self.navigationController pushViewController:att animated:YES];
 }
 
 -(IBAction)expenseTapped:(id)sender{
