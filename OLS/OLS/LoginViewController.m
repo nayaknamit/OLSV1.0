@@ -141,14 +141,14 @@
             }else{
                 
                 NSString *errorMessage = [resultDict objectForKey:@"ErrorMessage"];
-                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                [self showAlert:@"Alert" body:errorMessage];
                 
             }
             
         }else{
             if(error !=nil){
                 NSString *errorMessage = error.localizedDescription;
-                [self showAlert:NSLocalizedString(@"ALERT_VIEW_TITLE",nil) body:errorMessage];
+                [self showAlert:@"Alert" body:errorMessage];
             }
         }
     }];
@@ -156,7 +156,7 @@
 
 - (void)showAlert:(NSString*)titleText body:(NSString *)bodyText {
     
-    UIAlertView *ErrorAlertView = [[UIAlertView alloc]initWithTitle:titleText message:bodyText delegate:nil cancelButtonTitle:NSLocalizedString(@"ALERT_VIEW_OK","nil") otherButtonTitles:Nil, nil];
+    UIAlertView *ErrorAlertView = [[UIAlertView alloc]initWithTitle:titleText message:bodyText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:Nil, nil];
     [ErrorAlertView show];
     
 }
